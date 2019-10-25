@@ -15,12 +15,12 @@ class Slideshow extends Component{
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <Image src={require("./img/home_slide_1.jpg")} fluid/>
+            <Image src={require("./img/home_slide_2.jpg")} fluid/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <Image src={require("./img/home_slide_1.jpg")} fluid/>
+            <Image src={require("./img/home_slide_3.jpg")} fluid/>
           </div>
         </div>
       </Fade>
