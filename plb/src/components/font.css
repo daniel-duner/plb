@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Jura:300&display=swap');
+
+.brand
+{
+    color: rgb(111,14,33) !important;
+    font-size: 40px;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+.navbar
+{
+    color: rgb(111,14,33) !important;
+    font-size: 20px;
+    font-family: 'Jura', sans-serif;
+    text-transform: uppercase;
+}
+
+.nav-font-color{
+    color: rgb(111,14,33) !important;
+}
+.nav-font-color:hover{
+    color: rgb(192,192,192) !important;
+}

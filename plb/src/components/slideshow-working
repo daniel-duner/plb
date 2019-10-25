@@ -1,0 +1,48 @@
+import React from 'react';
+import { Fade } from 'react-slideshow-image';
+import Image from 'react-bootstrap/Image';
+
+import img_1 from '../img/home_slide_1.jpg';
+import img_2 from '../img/home_slide_2.jpg';
+import img_3 from '../img/home_slide_3.jpg';
+ 
+const fadeImages = [
+  img_1, img_2, img_3
+];
+ 
+const fadeProperties = {
+  duration: 7000,
+  transitionDuration: 2000,
+  infinite: true,
+  indicators: false,
+  arrows: false,
+  onChange: (oldIndex, newIndex) => {
+    console.log(`fade transition from ${oldIndex} to ${newIndex}`);
+  }
+}
+ 
+const Slideshow = () => {
+  return (
+    <div className="slide-container">
+      <Fade {...fadeProperties}>
+        <div className="each-fade">
+          <div className="image-container">
+            <Image src={fadeImages[0]} fluid/>
+          </div>
+        </div>
+        <div className="each-fade">
+          <div className="image-container">
+            <Image src={fadeImages[1]} fluid/>
+          </div>
+        </div>
+        <div className="each-fade">
+          <div className="image-container">
+            <Image src={fadeImages[2]} fluid/>
+          </div>
+        </div>
+      </Fade>
+    </div>
+  )
+}
+
+export default Slideshow;
