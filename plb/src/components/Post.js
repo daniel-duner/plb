@@ -22,29 +22,31 @@ class Post extends Component {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={require("./img/home_slide_1.jpg")}
+                            src={require("./img/consHD_1.jpg")}
                             alt="First slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={require("./img/home_slide_2.jpg")}                            
+                            src={require("./img/consHD_2.jpg")}                            
                             alt="Third slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={require("./img/home_slide_3.jpg")}
+                            src={require("./img/consHD_3.jpg")}
                             alt="Third slide"
                         />
                     </Carousel.Item>
                 </Carousel>
                 </Col>
                 <Col className="text-center">
+                <Container style={{padding: "30px 100px 30px 100px"}}>
                 <h1 className="post-standard-header">Projekt slussen</h1>
                 <p className="post-standard-text"><LoremIpsum p={1} /></p>
+                </Container>
                 </Col>
                 </Row>
             </Container>
