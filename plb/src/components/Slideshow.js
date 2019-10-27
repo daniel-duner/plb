@@ -10,17 +10,17 @@ class Slideshow extends Component{
       <Fade {...this.props.fadeProperties}>
         <div className="each-fade">
           <div className="image-container">
-            <Image src={require("./img/home_slide_1.jpg")} fluid/>
+            <Image src={this.props.fadeImages[0]} fluid/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <Image src={require("./img/home_slide_2.jpg")} fluid/>
+            <Image src={this.props.fadeImages[1]} fluid/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <Image src={require("./img/home_slide_3.jpg")} fluid/>
+            <Image src={this.props.fadeImages[2]} fluid/>
           </div>
         </div>
       </Fade>

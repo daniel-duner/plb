@@ -4,6 +4,7 @@ import { LoremIpsum} from 'react-lorem-ipsum';
 
 import './slideShow.css';
 import Slideshow from './Slideshow';
+import Post from './Post';
 
 //<i class="large bars icon"></i>
 
@@ -14,7 +15,7 @@ class Home extends Component{
             imageState: true,
             fadeInCounter: 0,
             fadeOutCounter: 1,
-            images: ["./img/home_slide_1.jpg","./img/home_slide_2.jpg","./img/home_slide_3.jpg"],
+            images: [require("./img/home_slide_1.jpg"),require("./img/home_slide_2.jpg"),require("./img/home_slide_3.jpg")],
             fadeProperties: {
                 duration: 7000,
                 transitionDuration: 2000,
@@ -34,14 +35,7 @@ class Home extends Component{
         
     }
 
-    render(){
-        return(<div>
-            <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} />
-            <Jumbotron fluid>
-                <LoremIpsum/>
-            </Jumbotron>
-        </div>);
-    };
+    
 
 
     renderSlideShow = (imageState) => {
@@ -64,6 +58,13 @@ class Home extends Component{
                 return 1;
         }
     }
+    
+    render(){
+        return(<div>
+            <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} />
+            <Post/>
+        </div>);
+    };
 }
 
 export default Home;
