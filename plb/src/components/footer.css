@@ -1,0 +1,22 @@
+.p1{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+.p2{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 18px;
+}
+.p3{
+    margin-top: 0;
+    font-size: 18px;
+    padding-top: 0;
+    /* padding-bottom: 15px; */
+}
+.align-text{
+    padding-top: 0;
+}
+.dark-background{
+    background-color: rgb(63,55,60);
+}

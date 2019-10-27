@@ -15,7 +15,7 @@ class Home extends Component{
             imageState: true,
             fadeInCounter: 0,
             fadeOutCounter: 1,
-            images: [require("./img/home_slide_1.jpg"),require("./img/home_slide_2.jpg"),require("./img/home_slide_3.jpg")],
+            images: [require("./img/home_slide_1.jpg"),require("./img/home_slide_2_scaled.jpg"),require("./img/home_slide_3_scaled.jpg")],
             fadeProperties: {
                 duration: 7000,
                 transitionDuration: 2000,
