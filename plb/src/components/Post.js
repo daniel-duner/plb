@@ -17,8 +17,8 @@ class Post extends Component {
         return (
             <Container fluid className="box-layout bottom-border">
                 <Row>
-                <Col className="align-center">
-                <Carousel className="">
+                <Col className="align-center" style={{paddingTop: "50px", paddingLeft: "60px"}}>
+                <Carousel >
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
@@ -43,7 +43,7 @@ class Post extends Component {
                 </Carousel>
                 </Col>
                 <Col className="text-center">
-                <Container style={{padding: "30px 100px 30px 100px"}}>
+                <Container style={{padding: "50px 100px 50px 100px"}}>
                 <h1 className="post-standard-header">Projekt slussen</h1>
                 <p className="post-standard-text"><LoremIpsum p={1} /></p>
                 </Container>
