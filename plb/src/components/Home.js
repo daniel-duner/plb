@@ -63,6 +63,7 @@ class Home extends Component{
         return(<div>
             <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} />
             <Post/>
+            <Post/>
         </div>);
     };
 }

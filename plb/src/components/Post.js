@@ -15,7 +15,7 @@ class Post extends Component {
  
     render() {
         return (
-            <Container fluid className="box-layout">
+            <Container fluid className="box-layout bottom-border">
                 <Row>
                 <Col className="align-center">
                 <Carousel className="">
