@@ -7,11 +7,13 @@ import About from './components/About.js';
 import Contact from './components/Contact.js';
 import Header from './components/Header.js';
 import Slideshow from './components/Slideshow.js'
+import Footer from './components/Footer.js'
 
 const App = () => {
     return (<div>
         <Header/>
         <Home/>
+        <Footer/>
     </div>)
 }
 

@@ -2,7 +2,7 @@
 
 .brand
 {
-    color: rgb(111,14,33) !important;
+    color: rgb(160,10,40) !important;
     font-size: 40px;
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
@@ -20,4 +20,16 @@
 }
 .nav-font-color:hover{
     color: rgb(192,192,192) !important;
+}
+
+.footer{
+    color: rgb(192,192,192) !important;
+}
+.footer-links{
+    color: rgb(192,192,192) !important;
+    font-size: 14px;
+}
+.footer-links:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
 }
