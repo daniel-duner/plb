@@ -26,39 +26,6 @@ class Home extends Component{
 
         }
     }
-
-    componentDidMount(){
-
-        setInterval(() =>{
-            this.renderSlideShow(this.state.imageState);
-        }, 3500);
-        
-    }
-
-    
-
-
-    renderSlideShow = (imageState) => {
-        if(this.state.imageState){
-            this.setState({fadeInCounter: this.getNextImage(this.state.fadeInCounter)})
-            this.setState({imageState: false});
-        } else {
-            this.setState({fadeOutCounter: this.getNextImage(this.state.fadeInCounter)})
-            this.setState({imageState: true});
-        }       
-    }
-
-    getNextImage = (number) => {
-        switch(number){
-            case 0:
-                return 2;
-            case 1:
-                return 0;
-            case 2:
-                return 1;
-        }
-    }
-    
     render(){
         return(<div>
             <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} />

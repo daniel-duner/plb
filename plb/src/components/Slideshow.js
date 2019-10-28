@@ -9,8 +9,9 @@ class Slideshow extends Component{
       <Fade {...this.props.fadeProperties}>
         {this.props.fadeImages.map((picture) => 
           <div className="each-fade">
-            <div className="image-container">
-              <Image src={picture.toString()} fluid/>
+            <div className="image-container" >
+              <Image src={picture.toString()} fluid></Image>
+              {/* <h1 className="text-over-image">Text over image</h1> */}
             </div>
           </div>
         )}

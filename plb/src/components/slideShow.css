@@ -6,6 +6,12 @@
     opacity: 1.0;
     animation: fadeOut 7s infinite !important;
 }
+.text-over-image{
+    position: 'absolute';
+    top: '50%';
+    left: '50%';
+      
+}
 @keyframes fadeIn {
     100%, 0% { opacity: 0}
     50% {opacity: 1}
