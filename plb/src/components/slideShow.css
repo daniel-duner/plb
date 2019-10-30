@@ -8,9 +8,12 @@
 }
 .text-over-image{
     position: 'absolute';
-    top: '50%';
-    left: '50%';
+    top: '25%';
+    left: '18%';
       
+}
+.add-text{
+    backgroundSize : 'cover'
 }
 @keyframes fadeIn {
     100%, 0% { opacity: 0}

@@ -43,3 +43,10 @@
     text-decoration: none;
     color: rgb(255, 255, 255) !important;
 }
+.text-image{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255) !important;
+    font-size: 10em;
+    /* background:rgba(255,255,255,0.0); */
+}
