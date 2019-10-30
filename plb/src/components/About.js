@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import { LoremIpsum} from 'react-lorem-ipsum';
 
 import './slideShow.css';
 import Slideshow from './Slideshow';
@@ -8,9 +9,11 @@ class About extends Component{
     constructor (props){
         super(props);
         this.state = {
-            imageState: true,
-            fadeInCounter: 0,
-            fadeOutCounter: 1,
+            carouselImages:[require("./img/consHD_1.jpg"),require("./img/consHD_2.jpg"),require("./img/consHD_3.jpg")],
+            textGallerySlussen: LoremIpsum(1),
+            // imageState: true,
+            // fadeInCounter: 0,
+            // fadeOutCounter: 1,
             images: [require("./img/home_slide_1.jpg"),require("./img/home_slide_2.jpg"),require("./img/home_slide_3.jpg")],
             fadeProperties: {
                 duration: 7000,
@@ -26,8 +29,8 @@ class About extends Component{
     render(){
         return (<div>
             <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} />
-            <Post/>
-            <Post/>
+            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Slussen"/>
+            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Slussen"/>
         </div>);
 
     };

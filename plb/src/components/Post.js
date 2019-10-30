@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import { LoremIpsum } from 'react-lorem-ipsum';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Carousel from 'react-bootstrap/Carousel';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 
 
-import Slideshow from './Slideshow.js';
 import './post.css';
 import './font.css';
 
@@ -19,33 +16,20 @@ class Post extends Component {
                 <Row>
                 <Col className="align-center" style={{paddingTop: "50px", paddingLeft: "60px"}}>
                 <Carousel >
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={require("./img/consHD_1.jpg")}
-                            alt="First slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={require("./img/consHD_2.jpg")}                            
-                            alt="Third slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={require("./img/consHD_3.jpg")}
-                            alt="Third slide"
-                        />
-                    </Carousel.Item>
+                    {this.props.carouselImages.map((picture) => 
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={picture.toString()}
+                            />
+                        </Carousel.Item>
+                    )} 
                 </Carousel>
                 </Col>
                 <Col className="text-center">
                 <Container style={{padding: "50px 100px 50px 100px"}}>
-                <h1 className="post-standard-header">Projekt slussen</h1>
-                <p className="post-standard-text"><LoremIpsum p={1} /></p>
+                <h1 className="post-standard-header">{this.props.title}</h1>
+                <p className="post-standard-text">{this.props.text}</p>
                 </Container>
                 </Col>
                 </Row>
