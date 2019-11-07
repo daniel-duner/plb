@@ -11,9 +11,6 @@ class About extends Component{
         this.state = {
             carouselImages:[require("./img/consHD_1.jpg"),require("./img/consHD_2.jpg"),require("./img/consHD_3.jpg")],
             textGallerySlussen: LoremIpsum(1),
-            // imageState: true,
-            // fadeInCounter: 0,
-            // fadeOutCounter: 1,
             images: [require("./img/home_slide_1.jpg"),require("./img/home_slide_2.jpg"),require("./img/home_slide_3.jpg")],
             fadeProperties: {
                 duration: 7000,

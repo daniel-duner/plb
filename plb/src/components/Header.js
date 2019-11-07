@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-//import { Link } from "react-router-dom";
 import { Nav, Navbar, NavItem } from "react-bootstrap";
 import {Form, FormControl, Button} from 'react';
 import './header.css';
