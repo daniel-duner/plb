@@ -23,3 +23,10 @@
     0%, 100% { opacity: 0}
     50% {opacity: 1}
 }
+.text-image{
+    position: relative;
+    top: 35%;
+    transform: translateY(-35%);
+    text-align: center;
+    
+}
