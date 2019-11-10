@@ -57,3 +57,6 @@
     text-decoration: none;
     color: rgb(192,192,192) !important;
 }
+.slideShow-image-text{
+    text-transform: capitalize;
+}
