@@ -50,3 +50,10 @@
     font-size: 10em;
     /* background:rgba(255,255,255,0.0); */
 }
+.contact-links{
+    color: rgb(111,14,33) !important;
+}
+.contact-links:hover{
+    text-decoration: none;
+    color: rgb(192,192,192) !important;
+}

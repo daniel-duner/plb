@@ -12,7 +12,7 @@ class PostText extends Component {
  
     render() {
         return (
-                <Container className="bottom-border" style={{padding: "50px 100px 50px 100px"}}>
+                <Container className="bottom-border" style={{padding: "50px 100px 50px 60px"}} fluid >
                     <h1 className="post-standard-header">{this.props.title}</h1>
                     <p className="post-standard-text">{this.props.text}</p>
                 </Container>

@@ -1,25 +1,18 @@
-.card {
-    font-size: 1em;
-    overflow: hidden;
-    padding: 0;
-    margin: 30px;
-    border: none;
-    border-radius: .28571429rem;
-    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+.box-layout{
+    padding-top: 60px;
+    /* min-height: 400px; */
+    background-color: #FFFFFF;
 }
 
-.card-block {
-    font-size: 1em;
-    position: relative;
-    margin: 0;
-    padding: 1em;
-    border: none;
-    border-top: 1px solid rgba(34, 36, 38, .1);
-    box-shadow: none;
-}
-
-.card-img {
-    display: block;
+.standard-text-layout{
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bottom-border{
+    border-bottom-style: solid;
+    border-bottom-width: 1.5px !important;
+    border-color: rgb(191, 197, 202, 0.2);
 }
