@@ -21,9 +21,15 @@
 .nav-font-color:hover{
     color: rgb(192,192,192) !important;
 }
+.nav-lang-font-color{
+    color: rgba(192,192,192,0.5) !important;
+}
+.nav-lang-font-color:hover{
+    color: rgb(192,192,192) !important;
+}
 
 .post-standard-text{
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Jura', sans-serif;
     text-align: left;
 }

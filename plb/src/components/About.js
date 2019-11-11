@@ -27,8 +27,8 @@ class About extends Component{
     render(){
         return (<div>
             <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} slideshowText={this.state.slideshowText}/>
-            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Slussen" />
-            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Slussen"/>
+            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Slussen" imagePosition="left"/>
+            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Slussen" imagePosition="left"/>
         </div>);
 
     };
