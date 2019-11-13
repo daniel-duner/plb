@@ -12,7 +12,7 @@ class Home extends Component{
     constructor (props){
         super(props);
         this.state = {
-            slideshowText: "Våra värderingar",
+            slideshowText: "",
             carouselImages:[require("./img/consHD_1.jpg"),require("./img/consHD_2.jpg"),require("./img/consHD_3.jpg")],
             textGallerySlussen: LoremIpsum(1),
             images: [require("./img/home_slide_1.jpg"),require("./img/home_slide_2.jpg"),require("./img/home_slide_3.jpg")],
@@ -30,7 +30,7 @@ class Home extends Component{
         return(<div>
             <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} slideshowText={this.state.slideshowText} />
             <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Slussen" imagePosition="left"/>
-            <Post text={this.state.textGallerySlussen} title="Projekt Slussen" />
+            <Post text={this.state.textGallerySlussen} title="Projekt Slussen" fontSize="20px"/>
             <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Slussen" imagePosition="right"/>
             <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Slussen" imagePosition="right"/>
            

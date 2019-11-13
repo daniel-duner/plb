@@ -15,7 +15,7 @@ class Post extends Component {
             return (
                 <Container fluid className="box-layout bottom-border">
                     <Row>
-                        <Col className="align-center" style={{ paddingTop: "50px", paddingLeft: "60px" }}>
+                        <Col className="align-center" style={{ paddingTop: "0px", paddingLeft: "60px" }}>
                             <Carousel >
                                 {this.props.carouselImages.map((picture) =>
                                     <Carousel.Item>
@@ -47,7 +47,7 @@ class Post extends Component {
                                 <p className="post-standard-text">{this.props.text}</p>
                             </Container>
                         </Col>
-                        <Col className="align-center" style={{ paddingTop: "50px", paddingLeft: "60px" }}>
+                        <Col className="align-center" style={{ paddingTop: "0px", paddingLeft: "60px" }}>
                             <Carousel >
                                 {this.props.carouselImages.map((picture) =>
                                     <Carousel.Item>
@@ -64,12 +64,15 @@ class Post extends Component {
             );
         } else {
             return (
-                <Container fluid className="text-box-layout bottom-border">
+                <Container fluid className="box-layout bottom-border">
                     <Row>
                         <Col className="text-center">
-                            <Container style={{ padding: "50px 100px 50px 100px" }}>
+                            <Container style={{ padding: "50px 200px 50px 200px"}}>
                                 <h1 className="post-standard-header">{this.props.title}</h1>
-                                <p className="post-standard-text">{this.props.text}</p>
+                                <p 
+                                    className="post-standard-text"
+                                    style={{fontSize:this.props.fontSize}}
+                                >{this.props.text}</p>
                             </Container>
                         </Col>
                     </Row>
@@ -81,7 +84,7 @@ class Post extends Component {
 
     renderImage() {
         return (
-            <Col className="align-center" style={{ paddingTop: "50px", paddingLeft: "60px" }}>
+            <Col className="align-center" style={{ paddingTop: "0px", paddingLeft: "60px" }}>
                 <Carousel >
                     {this.props.carouselImages.map((picture) =>
                         <Carousel.Item>
