@@ -16,8 +16,8 @@ class Header extends Component{
               <Nav.Link className="nav-font-color" href="/contact">Kontakt</Nav.Link>
             </Nav>
             <Nav className="ml-auto">
-              <Nav.Link className="nav-font-color" href="#swe">Sv</Nav.Link>
-              <Nav.Link className="nav-font-color" href="#en">Eng</Nav.Link>
+              <Nav.Link className="nav-lang-font-color" href="#swe">Sv</Nav.Link>
+              <Nav.Link className="nav-lang-font-color" href="#en">Eng</Nav.Link>
             </Nav>
         </Navbar>
         );
