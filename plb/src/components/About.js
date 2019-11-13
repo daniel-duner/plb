@@ -28,13 +28,11 @@ class About extends Component{
     render(){
         return (<div>
             <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} slideshowText={this.state.slideshowText}/>
-            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Värderingar" />
-            <Post carouselImages={this.state.img_1} text={
-            ""
-            } title="Personliga" imagePosition="left"/>
+            <Post carouselImages={this.state.carouselImages} text={LoremIpsum()} title="Värderingar" />
+            <Post carouselImages={this.state.img_1} text={LoremIpsum(2)} title="Personliga" imagePosition="left"/>
             <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Utvecklande"/>
             <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Tillsammans" />
-            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Ärliga" />
+            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Trovärdiga" />
         </div>);
 
     };

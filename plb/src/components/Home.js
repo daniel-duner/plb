@@ -31,8 +31,8 @@ class Home extends Component{
             <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} slideshowText={this.state.slideshowText} />
             <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Slussen" imagePosition="left"/>
             <Post text={this.state.textGallerySlussen} title="Projekt Slussen" fontSize="20px"/>
-            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Slussen" imagePosition="right"/>
-            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Slussen" imagePosition="right"/>
+            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Essingen" imagePosition="right"/>
+            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title="Projekt Hamngatan" imagePosition="right"/>
            
         </div>);
     };

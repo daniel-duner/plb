@@ -33,8 +33,8 @@ class Contact extends Component {
         return (<div>
             <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} />
             <PostText title="Våra medarbetare" />
-            <ContactCard email="molin.jakob@gmail.com" phone="0724278994" carouselImages={[require("./img/profile_1.png")]} text={this.state.textGallerySlussen} title="Fredrik Molin" />
-            <ContactCard email="molin.jakob@gmail.com" phone="0724278994" carouselImages={[require("./img/profile_2.jpg")]} text={this.state.textGallerySlussen} title="Fredrik Molin" />
+            <ContactCard email="anna.andersson@projektledningsbyran.se" phone="0724278994" carouselImages={[require("./img/profile_1.png")]} text={this.state.textGallerySlussen} title="Anna Andersson" />
+            <ContactCard email="anders.svensson@projektledningsbyran.se" phone="0724278994" carouselImages={[require("./img/profile_2.jpg")]} text={this.state.textGallerySlussen} title="Anders Svensson" />
         {/*<ContactCard email="molin.jakob@gmail.com" phone="0724278994" carouselImages={this.state.personImages} text={this.state.textGallerySlussen} title="Fredrik Molin" />*/}
         </div>);
 

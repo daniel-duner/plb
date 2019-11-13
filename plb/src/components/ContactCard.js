@@ -35,8 +35,8 @@ class ContactCard extends Component {
                         </Row>
                         <Row>
                             <Container style={{ padding: "50px 100px 50px 100px" }}>
-                                <a className="post-standard-text contact-links" style={{ padding: "0px 20px 0px 20px", display: "block" }} href={"mailto:" + this.props.email}>{this.props.email}</a>
-                                <a className="post-standard-text contact-links" style={{ padding: "0px 20px 0px 20px", display: "block" }} href={"tel:" + this.props.phone}>{this.props.phone}</a>
+                                <a className="post-standard-text contact-links" style={{ padding: "-10px 20px 0px 20px", display: "block" }} href={"mailto:" + this.props.email}>{this.props.email}</a>
+                                <a className="post-standard-text contact-links" style={{ padding: "-10px 20px 0px 20px", display: "block" }} href={"tel:" + this.props.phone}>{this.props.phone}</a>
 
                             </Container>
                         </Row>
