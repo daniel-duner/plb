@@ -8,6 +8,7 @@ import About from './components/About.js';
 import Contact from './components/Contact.js';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js'
+import Project from './components/Project.js';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="/project" component={Project} />
         </BrowserRouter>
         <Footer/>
     </div>)

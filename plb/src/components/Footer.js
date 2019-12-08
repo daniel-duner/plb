@@ -4,16 +4,16 @@ import './font.css'
 import './footer.css';
 
 
-class Footer extends Component{
-    constructor (props){
+class Footer extends Component {
+    constructor(props) {
         super(props);
         this.state = {
             companyInfo: "Projektledningsbyrån J.Hedenström AB \nOrg.nr: 556886-4622 \nLångholmsgatan 30 \n117 33 Stockholm"
         }
     }
-    render(){
+    render() {
 
-        return(
+        return (
             <Navbar className="dark-background">
                 <Navbar.Brand className="brand" href="#home">Projektledningsbyrån</Navbar.Brand>
                 <Nav className="mr-auto navbar align-text">
@@ -25,7 +25,15 @@ class Footer extends Component{
                         <p className="p1"> </p>
                     </Navbar.Text>
                 </Nav>
-                <Nav className="m-auto">   
+                <Nav className="ml-auto">
+                    <Navbar.Text className="footer">
+                        <a href="https://www.uc.se/risksigill2?showorg=556886-4622&language=swe"
+                            title="Sigillet är utfärdat av UC AB. Klicka på bilden för information om UC:s Riskklasser.">
+                            <img src="https://www.uc.se/ucsigill2/sigill?org=556886-4622&language=swe&product=sma&fontcolor=b" />
+                        </a>
+                    </Navbar.Text>
+                </Nav>
+                <Nav className="m-auto">
                     <Navbar.Text className="footer">
                         <p className="p2">Kontakta oss</p>
                         <p className="p1">Telefon</p>
@@ -33,7 +41,7 @@ class Footer extends Component{
                         <p className="p1"><a className="footer-links" href="mailto:johan.hedenstrom@projektledningsbyran.se">Mail</a></p>
                         <p className="p1"><a className="footer-links" href="https://www.google.com/maps/place/L%C3%A5ngholmsgatan+30,+117+33+Stockholm/@59.316316,18.0308374,17z/data=!3m1!4b1!4m5!3m4!1s0x465f77c5ab9f6c5d:0x731140427f29efce!8m2!3d59.3163133!4d18.0330262">Hitta hit</a></p>
                     </Navbar.Text>
-                </Nav> 
+                </Nav>
             </Navbar>
         )
     }

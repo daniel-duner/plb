@@ -13,6 +13,7 @@ class Header extends Component{
             <Nav className="mr-auto navbar">
               <Nav.Link className="nav-font-color" href="/">Hem</Nav.Link>
               <Nav.Link className="nav-font-color" href="/about">Om oss</Nav.Link>
+              <Nav.Link className="nav-font-color" href="/project">Projekt</Nav.Link>
               <Nav.Link className="nav-font-color" href="/contact">Kontakt</Nav.Link>
             </Nav>
             <Nav className="ml-auto">
