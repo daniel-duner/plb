@@ -12,10 +12,6 @@ class Contact extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            slideshowText: "Våra värderingar",
-            carouselImages: [require("./img/consHD_1.jpg"), require("./img/consHD_2.jpg"), require("./img/consHD_3.jpg")],
-            textGallerySlussen: LoremIpsum(1),
-            images: [require("./img/home_slide_1.jpg"), require("./img/home_slide_2.jpg"), require("./img/home_slide_3.jpg")],
             fadeProperties: {
                 duration: 7000,
                 transitionDuration: 2000,
@@ -24,19 +20,15 @@ class Contact extends Component {
                 arrows: false
             },
 
-            // require("./img/avatar.png")
-            personText: ["Hej jag heter Jakob", "Hej jag heter Fredrik"],
-            textGallerySlussen: "Detta är en beskrivning om en person som jobbar på företaget. Detta är en beskrivning om en person som jobbar på företaget.Detta är en beskrivning om en person som jobbar på företaget. Detta är en beskrivning om en person som jobbar på företaget. Detta är en beskrivning",
         }
     }
     render() {
         return (<div>
-            <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} />
-            <PostText title="Våra medarbetare" />
-            <ContactCard email="johan.hedenstrom@projektledningsbyran.se" phone="070-744 0850" carouselImages={[require("./img/johan.jpg")]} text={this.state.textGallerySlussen} title="Johan Hedenström" />
-            <ContactCard email="fredrik.molin@projektledningsbyran.se" phone="073-432 5539" carouselImages={[require("./img/fredrik.jpg")]} text={this.state.textGallerySlussen} title="Fredrik Molin" />
-            <ContactCard email="kim.jangholm@projektledningsbyran.se" phone="073-432 5529" carouselImages={[require("./img/kim.jpg")]}  title="Kim Jangholm" />
-            <GoogleMaps/>
+            <PostText title={this.props.content.mainTitle} />
+            <ContactCard email="johan.hedenstrom@projektledningsbyran.se" phone="070-744 0850" carouselImages={[require("./img/contact/johan.jpg")]} title="Johan Hedenström" />
+            <ContactCard email="fredrik.molin@projektledningsbyran.se" phone="073-432 5539" carouselImages={[require("./img/contact/fredrik.jpg")]} title="Fredrik Molin" />
+            <ContactCard email="kim.jangholm@projektledningsbyran.se" phone="073-432 5529" carouselImages={[require("./img/contact/kim.jpg")]} title="Kim Jangholm" />
+            <GoogleMaps title={this.props.content.mapsTitle} />
         </div>);
 
     };

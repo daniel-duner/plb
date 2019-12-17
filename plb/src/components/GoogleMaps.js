@@ -15,7 +15,7 @@ class GoogleMaps extends Component {
           <Col className="text-center" md={4}>
             <Row>
               <Container style={{ padding: "50px 100px 0px 100px" }}>
-                <h1 className="post-standard-header">Kontor</h1>
+                <h1 className="post-standard-header">{this.props.title}</h1>
                 <p className="post-standard-text">Långholmsgatan 30</p>
                 <p className="post-standard-text">117 33 Stockholm</p>
               </Container>

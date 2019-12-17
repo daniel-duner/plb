@@ -18,7 +18,7 @@ class Post extends Component {
                         <Row>
                             <Col className="align-center" style={{ paddingTop: "0px", paddingLeft: "60px" }}>
                                 {/* <Carousel {...this.props.carouselSettings}> */}
-                                <Carousel indicators='false' controls='false'>
+                                {/* <Carousel indicators='false' controls='false'>
                                     {this.props.carouselImages.map((picture) =>
                                         <Carousel.Item>
                                             <img
@@ -28,7 +28,11 @@ class Post extends Component {
                                             <p className="post-standard-text">{this.props.imgText}</p>
                                         </Carousel.Item>
                                     )}
-                                </Carousel>
+                                </Carousel> */}
+                                <img
+                                    className="d-block w-100"
+                                    src={this.props.carouselImages[0].toString()}
+                                />
                             </Col>
                             <Col className="text-center">
                                 <Container style={{ padding: "50px 100px 50px 100px" }}>
@@ -48,7 +52,7 @@ class Post extends Component {
                     <Container fluid className="box-layout bottom-border">
                         <Row>
                             <Col className="align-center" style={{ paddingTop: "0px", paddingLeft: "60px" }}>
-                                <Carousel indicators='false'>
+                                {/* <Carousel indicators='false'>
                                     {this.props.carouselImages.map((picture) =>
                                         <Carousel.Item>
                                             <img
@@ -58,7 +62,11 @@ class Post extends Component {
                                             <p className="post-standard-text">{this.props.imgText}</p>
                                         </Carousel.Item>
                                     )}
-                                </Carousel>
+                                </Carousel> */}
+                                <img
+                                    className="d-block w-100"
+                                    src={this.props.carouselImages[0].toString()}
+                                />
                             </Col>
                             <Col className="text-center">
                                 <Container style={{ padding: "50px 100px 50px 100px" }}>
@@ -73,7 +81,7 @@ class Post extends Component {
             }
         } else if (this.props.imagePosition == "right") {
             if (this.props.list != null) {
-                if (this.props.sigill != null) {
+                if (this.props.sigil != null) {
                     return (
                         <Container fluid className="box-layout bottom-border">
                             <Row>
@@ -84,21 +92,16 @@ class Post extends Component {
                                             {this.props.list.map((item) =>
                                                 <li className="post-standard-text">{item}</li>
                                             )}
-
-                                            {/* <a href="https://www.uc.se/risksigill2?showorg=556886-4622&language=swe"
-                                                title="Sigillet är utfärdat av UC AB. Klicka på bilden för information om UC:s Riskklasser." target=" _ blank">
-                                                <img src="https://www.uc.se/ucsigill2/sigill?org=556886-4622&language=swe&product=sma&fontcolor=b" />
-                                            </a> */}
                                         </ul>
-                                        <a className="post-standard-header" href="https://www.uc.se/risksigill2?showorg=556886-4622&language=swe"
-                                            title="Sigillet är utfärdat av UC AB. Klicka på bilden för information om UC:s Riskklasser." target=" _blank">
-                                            <img src="https://www.uc.se/ucsigill2/sigill?org=556886-4622&language=swe&product=lsa&fontcolor=b&type=svg"
+                                        <a className="post-standard-header" href={this.props.sigil.href}
+                                            title={this.props.sigil.title} target=" _blank">
+                                            <img src={this.props.sigil.src}
                                             />
                                         </a>
                                     </Container>
                                 </Col>
                                 <Col className="align-center" style={{ paddingTop: "0px", paddingLeft: "60px" }}>
-                                    <Carousel indicators="false">
+                                    {/* <Carousel indicators="false">
                                         {this.props.carouselImages.map((picture) =>
                                             <Carousel.Item>
                                                 <img
@@ -108,7 +111,11 @@ class Post extends Component {
                                                 <p className="post-standard-text">{this.props.imgText}</p>
                                             </Carousel.Item>
                                         )}
-                                    </Carousel>
+                                    </Carousel> */}
+                                    <img
+                                    className="d-block w-100"
+                                    src={this.props.carouselImages[0].toString()}
+                                />
                                 </Col>
                             </Row>
                         </Container>
@@ -128,7 +135,7 @@ class Post extends Component {
                                     </Container>
                                 </Col>
                                 <Col className="align-center" style={{ paddingTop: "0px", paddingLeft: "60px" }}>
-                                    <Carousel indicators="false">
+                                    {/* <Carousel indicators="false">
                                         {this.props.carouselImages.map((picture) =>
                                             <Carousel.Item>
                                                 <img
@@ -138,7 +145,11 @@ class Post extends Component {
                                                 <p className="post-standard-text">{this.props.imgText}</p>
                                             </Carousel.Item>
                                         )}
-                                    </Carousel>
+                                    </Carousel> */}
+                                    <img
+                                    className="d-block w-100"
+                                    src={this.props.carouselImages[0].toString()}
+                                />
                                 </Col>
                             </Row>
                         </Container>
@@ -155,7 +166,7 @@ class Post extends Component {
                                 </Container>
                             </Col>
                             <Col className="align-center" style={{ paddingTop: "0px", paddingLeft: "60px" }}>
-                                <Carousel indicators="false">
+                                {/* <Carousel indicators="false">
                                     {this.props.carouselImages.map((picture) =>
                                         <Carousel.Item>
                                             <img
@@ -165,7 +176,11 @@ class Post extends Component {
                                             <p className="post-standard-text">{this.props.imgText}</p>
                                         </Carousel.Item>
                                     )}
-                                </Carousel>
+                                </Carousel> */}
+                                <img
+                                    className="d-block w-100"
+                                    src={this.props.carouselImages[0].toString()}
+                                />
                             </Col>
                         </Row>
                     </Container>

@@ -1,27 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter, Route} from 'react-router-dom';
 
-import Home from './components/Home.js';
-import About from './components/About.js';
-import Contact from './components/Contact.js';
-import Header from './components/Header.js';
-import Footer from './components/Footer.js'
-import Project from './components/Project.js';
+import Cookies from 'universal-cookie';
 
 
-const App = () => {
-    return (<div>
-        <Header/>
-        <BrowserRouter>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/project" component={Project} />
-        </BrowserRouter>
-        <Footer/>
-    </div>)
-}
+import App from './components/App';
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(<App cookie={new Cookies()}/>, document.getElementById('root'));
