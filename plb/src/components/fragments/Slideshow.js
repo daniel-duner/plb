@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Fade } from 'react-slideshow-image';
 import Image from 'react-bootstrap/Image';
-import './font.css';
-import './slideShow.css';
-import { CardImgOverlay } from 'react-bootstrap/Card';
+import '../../resources/css/font.css';
+import '../../resources/css/slideShow.css';
 
 class Slideshow extends Component {
   render() {

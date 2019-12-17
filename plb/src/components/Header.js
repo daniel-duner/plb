@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import { Nav, Navbar, NavItem } from "react-bootstrap";
-import {Form, FormControl, Button} from 'react';
-import './header.css';
-import './font.css';
+import '../resources/css/header.css';
+import '../resources/css/font.css';
 
 
 class Header extends Component{

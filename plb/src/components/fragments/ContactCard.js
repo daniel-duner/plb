@@ -4,8 +4,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 
-import './font.css';
-import './contactCard.css';
+import '../../resources/css/font.css';
+import '../../resources/css/contactCard.css';
 
 
 class ContactCard extends Component {

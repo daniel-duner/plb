@@ -3,14 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Media from 'react-media';
 
-import './slideShow.css';
+import '../resources/css/slideShow.css';
+
 import Home from './Home.js';
 import About from './About.js';
 import Contact from './Contact.js';
 import Header from './Header.js';
 import Footer from './Footer.js'
 import Project from './Project.js';
-import Slideshow from './Slideshow';
+import Slideshow from './fragments/Slideshow';
 
 
 class App extends Component {
@@ -26,9 +27,9 @@ class App extends Component {
                 arrows: false
             },
             images: [
-                require("./img/homePhotos/2.jpg"),
-                require("./img/homePhotos/4.jpg"),
-                require("./img/homePhotos/5.jpg")
+                require("../resources/img/homePhotos/2.jpg"),
+                require("../resources/img/homePhotos/4.jpg"),
+                require("../resources/img/homePhotos/5.jpg")
             ],
             swe: {
                 sigil: {
@@ -192,15 +193,17 @@ class App extends Component {
     render() {
         return (<div>
             <Media queries={{
-                small: "(max-width: 599px)",
-                medium: "(min-width: 600px) and (max-width: 1199px)",
-                large: "(min-width: 1200px)"
+                small: "(max-width: 774px)",
+                medium: "(min-width: 775px)"
             }}>
                 {matches => (
                     <Fragment>
-                        {matches.small && <p>I am small!</p>}
-                        {matches.medium && <p>I am medium!</p>}
-                        {matches.large &&
+                        {matches.small && 
+                        <Fragment>
+                            
+                        </Fragment>
+                        }
+                        {matches.medium && 
                             <Fragment>
                                 <Header content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage} />
                                 <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} />

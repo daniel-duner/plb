@@ -1,14 +1,14 @@
 import React,{Component} from 'react';
 
-import './slideShow.css';
-import Post from './Post';
+import '../resources/css/slideShow.css';
+import Post from './fragments/Post';
 
 class About extends Component{
     constructor (props){
         super(props);
         this.state = {
-            carouselImages:[require("./img/consHD_1.jpg"),require("./img/consHD_2.jpg"),require("./img/consHD_3.jpg")],
-            img_1: [require("./img/about/digital-marketing-agency.jpg")],
+            carouselImages:[require("../resources/img/consHD_1.jpg"),require("../resources/img/consHD_2.jpg"),require("../resources/img/consHD_3.jpg")],
+            img_1: [require("../resources/img/about/digital-marketing-agency.jpg")],
         }
     }
 

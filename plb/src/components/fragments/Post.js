@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 
 
-import './post.css';
-import './font.css';
+import '../../resources/css/post.css';
+import '../../resources/css/font.css';
 
 class Post extends Component {
 

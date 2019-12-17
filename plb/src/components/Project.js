@@ -1,9 +1,7 @@
 import React,{Component} from 'react';
 
-import './slideShow.css';
-import Slideshow from './Slideshow';
-import Post from './Post';
-import PostText from './PostText';
+import '../resources/css/slideShow.css';
+import Post from './fragments/Post';
 
 //<i class="large bars icon"></i>
 
@@ -11,8 +9,8 @@ class Project extends Component{
     constructor (props){
         super(props);
         this.state = {
-            vasagatanImages:[require("./img/project/Vasagatan_4.png")],
-            slussenImages:[require("./img/project/slussen_1.jpg"),require("./img/project/slussen_2.jpg"),require("./img/project/slussen_3.jpg")],
+            vasagatanImages:[require("../resources/img/project/Vasagatan_4.png")],
+            slussenImages:[require("../resources/img/project/slussen_1.jpg"),require("../resources/img/project/slussen_2.jpg"),require("../resources/img/project/slussen_3.jpg")],
         }
     }
     render(){
