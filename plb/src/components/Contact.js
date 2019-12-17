@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { LoremIpsum } from 'react-lorem-ipsum'
 
 import ContactCard from './ContactCard'
+import GoogleMaps from './GoogleMaps';
 import PostText from './PostText'
 import Slideshow from './Slideshow'
 import Post from './Post'
@@ -23,8 +24,7 @@ class Contact extends Component {
                 arrows: false
             },
 
-            // require("./img/avatar.png"),
-            personImages: [require("./img/personCard.jpg")],
+            // require("./img/avatar.png")
             personText: ["Hej jag heter Jakob", "Hej jag heter Fredrik"],
             textGallerySlussen: "Detta är en beskrivning om en person som jobbar på företaget. Detta är en beskrivning om en person som jobbar på företaget.Detta är en beskrivning om en person som jobbar på företaget. Detta är en beskrivning om en person som jobbar på företaget. Detta är en beskrivning",
         }
@@ -36,7 +36,7 @@ class Contact extends Component {
             <ContactCard email="johan.hedenstrom@projektledningsbyran.se" phone="070-744 0850" carouselImages={[require("./img/johan.jpg")]} text={this.state.textGallerySlussen} title="Johan Hedenström" />
             <ContactCard email="fredrik.molin@projektledningsbyran.se" phone="073-432 5539" carouselImages={[require("./img/fredrik.jpg")]} text={this.state.textGallerySlussen} title="Fredrik Molin" />
             <ContactCard email="kim.jangholm@projektledningsbyran.se" phone="073-432 5529" carouselImages={[require("./img/kim.jpg")]}  title="Kim Jangholm" />
-            <ContactCard email="Långholmsgatan 30" phone=" 117 33, Stockholm" carouselImages={[require("./img/profile_2.jpg")]} text={this.state.textGallerySlussen} title="Kontor" />
+            <GoogleMaps/>
         </div>);
 
     };

@@ -18,7 +18,7 @@ class Post extends Component {
                         <Row>
                             <Col className="align-center" style={{ paddingTop: "0px", paddingLeft: "60px" }}>
                                 {/* <Carousel {...this.props.carouselSettings}> */}
-                                <Carousel indicators="false">
+                                <Carousel indicators='false' controls='false'>
                                     {this.props.carouselImages.map((picture) =>
                                         <Carousel.Item>
                                             <img
@@ -48,7 +48,7 @@ class Post extends Component {
                     <Container fluid className="box-layout bottom-border">
                         <Row>
                             <Col className="align-center" style={{ paddingTop: "0px", paddingLeft: "60px" }}>
-                                <Carousel indicators="false">
+                                <Carousel indicators='false'>
                                     {this.props.carouselImages.map((picture) =>
                                         <Carousel.Item>
                                             <img
