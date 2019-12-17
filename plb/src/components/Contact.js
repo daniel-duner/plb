@@ -33,9 +33,9 @@ class Contact extends Component {
         return (<div>
             <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} />
             <PostText title="Våra medarbetare" />
-            <ContactCard email="johan.hedenstrom@projektledningsbyran.se" phone="070-744 0850" carouselImages={[require("./img/profile_1.png")]} text={this.state.textGallerySlussen} title="Johan Hedenström" />
-            <ContactCard email="fredrik.molin@projektledningsbyran.se" phone="073-432 5539" carouselImages={[require("./img/profile_2.jpg")]} text={this.state.textGallerySlussen} title="Fredrik Molin" />
-            <ContactCard email="kim.jangholm@projektledningsbyran.se" phone="073-432 5529" carouselImages={[require("./img/profile_1.png")]}  title="Kim Jangholm" />
+            <ContactCard email="johan.hedenstrom@projektledningsbyran.se" phone="070-744 0850" carouselImages={[require("./img/johan.jpg")]} text={this.state.textGallerySlussen} title="Johan Hedenström" />
+            <ContactCard email="fredrik.molin@projektledningsbyran.se" phone="073-432 5539" carouselImages={[require("./img/fredrik.jpg")]} text={this.state.textGallerySlussen} title="Fredrik Molin" />
+            <ContactCard email="kim.jangholm@projektledningsbyran.se" phone="073-432 5529" carouselImages={[require("./img/kim.jpg")]}  title="Kim Jangholm" />
             <ContactCard email="Långholmsgatan 30" phone=" 117 33, Stockholm" carouselImages={[require("./img/profile_2.jpg")]} text={this.state.textGallerySlussen} title="Kontor" />
         </div>);
 
