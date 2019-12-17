@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route } from 'react-router-dom';
+import Media from 'react-media';
 
 import './slideShow.css';
 import Home from './Home.js';
@@ -177,34 +178,50 @@ class App extends Component {
     }
     setLanguage = (lang) => {
         this.props.cookie.set('language', lang);
-        this.setState({language: lang});
+        this.setState({ language: lang });
         this.forceUpdate();
     }
     checkLanguage = () => {
-        if (this.state.language == 'swe'){
+        if (this.state.language == 'swe') {
             return true;
-        } else if(this.state.language == 'eng'){
+        } else if (this.state.language == 'eng') {
             return false;
         }
         return true;
     }
     render() {
         return (<div>
-            <Header content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage} />
-            <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images}/>
-            <BrowserRouter>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/about"
-                    render={(props) => <About content={this.checkLanguage() ? this.state.swe.aboutText : this.state.eng.aboutText} sigil={this.checkLanguage() ? this.state.swe.sigil : this.state.eng.sigil} />}
-                />
-                <Route exact path="/contact"
-                    render={(props) => <Contact content={this.checkLanguage() ? this.state.swe.contactText : this.state.eng.contactText} />}
-                />
-                <Route exact path="/project"
-                    render={(props) => <Project content={this.checkLanguage() ? this.state.swe.projectText : this.state.eng.projectText} />}
-                />
-            </BrowserRouter>
-            <Footer content={this.checkLanguage() ? this.state.swe.footer : this.state.eng.footer} />
+            <Media queries={{
+                small: "(max-width: 599px)",
+                medium: "(min-width: 600px) and (max-width: 1199px)",
+                large: "(min-width: 1200px)"
+            }}>
+                {matches => (
+                    <Fragment>
+                        {matches.small && <p>I am small!</p>}
+                        {matches.medium && <p>I am medium!</p>}
+                        {matches.large &&
+                            <Fragment>
+                                <Header content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage} />
+                                <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} />
+                                <BrowserRouter>
+                                    <Route exact path="/" component={Home} />
+                                    <Route exact path="/about"
+                                        render={(props) => <About content={this.checkLanguage() ? this.state.swe.aboutText : this.state.eng.aboutText} sigil={this.checkLanguage() ? this.state.swe.sigil : this.state.eng.sigil} />}
+                                    />
+                                    <Route exact path="/contact"
+                                        render={(props) => <Contact content={this.checkLanguage() ? this.state.swe.contactText : this.state.eng.contactText} />}
+                                    />
+                                    <Route exact path="/project"
+                                        render={(props) => <Project content={this.checkLanguage() ? this.state.swe.projectText : this.state.eng.projectText} />}
+                                    />
+                                </BrowserRouter>
+                                <Footer content={this.checkLanguage() ? this.state.swe.footer : this.state.eng.footer} />
+                            </Fragment>}
+                    </Fragment>
+                )}
+            </Media>
+
         </div>);
     };
 
