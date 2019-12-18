@@ -13,8 +13,8 @@ import Header from './Header.js';
 import Footer from './Footer.js'
 import Project from './Project.js';
 import Slideshow from './fragments/Slideshow';
-import MobileHeader from './mobileComponents/MobileHeader';
 
+import MobileHeader from './mobileComponents/MobileHeader';
 import MobileAbout from './mobileComponents/MobileAbout';
 import MobileProject from './mobileComponents/MobileProject';
 
@@ -206,6 +206,7 @@ class App extends Component {
                     <Fragment>
                         {matches.small && 
                         <Fragment>
+                            <MobileHeader content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage}/>
                             <BrowserRouter>
                                     <Route exact path="/" component={Home} />
                                     <Route exact path="/about"

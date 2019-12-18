@@ -25,7 +25,7 @@ class About extends Component{
             <MobilePost text={this.state.textGallerySlussen} title={this.props.content.listSystemTitle}  list={this.props.content.listSystem}/>
         </div>);
 
-    };
+     };
 
 }
 
