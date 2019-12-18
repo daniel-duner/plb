@@ -16,6 +16,8 @@ import Slideshow from './fragments/Slideshow';
 import MobileHeader from './mobileComponents/MobileHeader';
 
 import MobileAbout from './mobileComponents/MobileAbout';
+import MobileProject from './mobileComponents/MobileProject';
+
 
 
 class App extends Component {
@@ -213,7 +215,7 @@ class App extends Component {
                                         render={(props) => <Contact content={this.checkLanguage() ? this.state.swe.contactText : this.state.eng.contactText} />}
                                     />
                                     <Route exact path="/project"
-                                        render={(props) => <Project content={this.checkLanguage() ? this.state.swe.projectText : this.state.eng.projectText} />}
+                                        render={(props) => <MobileProject content={this.checkLanguage() ? this.state.swe.projectText : this.state.eng.projectText} />}
                                     />
                                 </BrowserRouter>
                         </Fragment>
