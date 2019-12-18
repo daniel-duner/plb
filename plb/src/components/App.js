@@ -13,8 +13,8 @@ import Header from './Header.js';
 import Footer from './Footer.js'
 import Project from './Project.js';
 import Slideshow from './fragments/Slideshow';
-import MobileHeader from './mobileComponents/MobileHeader';
 
+import MobileHeader from './mobileComponents/MobileHeader';
 import MobileAbout from './mobileComponents/MobileAbout';
 
 
@@ -204,7 +204,8 @@ class App extends Component {
                     <Fragment>
                         {matches.small && 
                         <Fragment>
-                            <BrowserRouter>
+                            <MobileHeader content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage}/>
+                            {/* <BrowserRouter>
                                     <Route exact path="/" component={Home} />
                                     <Route exact path="/about"
                                         render={(props) => <MobileAbout content={this.checkLanguage() ? this.state.swe.aboutText : this.state.eng.aboutText} sigil={this.checkLanguage() ? this.state.swe.sigil : this.state.eng.sigil} />}
@@ -215,7 +216,7 @@ class App extends Component {
                                     <Route exact path="/project"
                                         render={(props) => <Project content={this.checkLanguage() ? this.state.swe.projectText : this.state.eng.projectText} />}
                                     />
-                                </BrowserRouter>
+                                </BrowserRouter> */}
                         </Fragment>
                         }
                         {matches.medium && 

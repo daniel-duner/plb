@@ -1,47 +1,30 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Nav, Navbar, NavItem } from "react-bootstrap";
-// import MenuItem from 'react-bootstrap/MenuItem'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+import { MenuItem } from '@material-ui/core';
+// import DropDown.Item from 'react-bootstrap/DropDown.Item'
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { slide as Menu } from 'react-burger-menu'
 import '../../resources/css/header.css';
 import '../../resources/css/font.css';
+import '../../resources/css/mobileHeader.css';
 
 
-class MobileHeader extends Component{
-    render(){
+class MobileHeader extends Component {
+    showSettings(event) {
+        event.preventDefault();
+    }
+    render() {
         return (
-            <Navbar inverse collapseOnSelect>
-            <Navbar.Header>
-              <Navbar.Brand>
-                <a href="#brand">React-Bootstrap</a>
-              </Navbar.Brand>
-              <Navbar.Toggle />
-            </Navbar.Header>
-            <Navbar.Collapse>
-              <Nav>
-                <NavItem eventKey={1} href="#">
-                  Link
-                </NavItem>
-                <NavItem eventKey={2} href="#">
-                  Link
-                </NavItem>
-                <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                  <MenuItem eventKey={3.1}>Action</MenuItem>
-                  <MenuItem eventKey={3.2}>Another action</MenuItem>
-                  <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                  <MenuItem divider />
-                  <MenuItem eventKey={3.3}>Separated link</MenuItem>
-                </NavDropdown>
-              </Nav>
-              <Nav pullRight>
-                <NavItem eventKey={1} href="#">
-                  Link Right
-                </NavItem>
-                <NavItem eventKey={2} href="#">
-                  Link Right
-                </NavItem>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
+            <Menu>
+                <a id="home" className="menu-item" href="/">{this.props.content.listLinks[0]}</a>
+                <a id="about" className="menu-item" href="/about">{this.props.content.listLinks[1]}</a>
+                <a id="project" className="menu-item" href="/project">{this.props.content.listLinks[2]}</a>
+                <a id="contact" className="menu-item" href="/contact">{this.props.content.listLinks[3]}</a>
+
+                <a id="swe" className="menu-item menu-item-lang0 nav-lang-font-color">SV</a> 
+                <a id="eng" className="menu-item menu-item-lang1 nav-lang-font-color">ENG</a> 
+            </Menu>
         );
 
     };
