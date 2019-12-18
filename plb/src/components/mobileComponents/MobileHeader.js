@@ -1,25 +1,47 @@
 import React, {Component} from 'react';
 import { Nav, Navbar, NavItem } from "react-bootstrap";
-import '../resources/css/header.css';
-import '../resources/css/font.css';
+// import MenuItem from 'react-bootstrap/MenuItem'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import '../../resources/css/header.css';
+import '../../resources/css/font.css';
 
 
 class MobileHeader extends Component{
     render(){
         return (
-        <Navbar sticky="top" style={{backgroundColor: "white"}}variant="light">
-            <Navbar.Brand className="brand" href="/">Projektledningsbyrån</Navbar.Brand>
-            <Nav className="mr-auto navbar">
-              <Nav.Link className="nav-font-color" href="/">{this.props.content.listLinks[0]}</Nav.Link>
-              <Nav.Link className="nav-font-color" href="/about">{this.props.content.listLinks[1]}</Nav.Link>
-              <Nav.Link className="nav-font-color" href="/project">{this.props.content.listLinks[2]}</Nav.Link>
-              <Nav.Link className="nav-font-color" href="/contact">{this.props.content.listLinks[3]}</Nav.Link>
-            </Nav>
-            <Nav className="ml-auto">
-              <Nav.Link className="nav-lang-font-color" lang="swe" onClick={(e)=> this.props.setLanguage(e.target.lang)} >Sv</Nav.Link>
-              <Nav.Link className="nav-lang-font-color" lang="eng" onClick={(e)=> this.props.setLanguage(e.target.lang)} >Eng</Nav.Link>
-            </Nav>
-        </Navbar>
+            <Navbar inverse collapseOnSelect>
+            <Navbar.Header>
+              <Navbar.Brand>
+                <a href="#brand">React-Bootstrap</a>
+              </Navbar.Brand>
+              <Navbar.Toggle />
+            </Navbar.Header>
+            <Navbar.Collapse>
+              <Nav>
+                <NavItem eventKey={1} href="#">
+                  Link
+                </NavItem>
+                <NavItem eventKey={2} href="#">
+                  Link
+                </NavItem>
+                <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+                  <MenuItem eventKey={3.1}>Action</MenuItem>
+                  <MenuItem eventKey={3.2}>Another action</MenuItem>
+                  <MenuItem eventKey={3.3}>Something else here</MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                </NavDropdown>
+              </Nav>
+              <Nav pullRight>
+                <NavItem eventKey={1} href="#">
+                  Link Right
+                </NavItem>
+                <NavItem eventKey={2} href="#">
+                  Link Right
+                </NavItem>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
         );
 
     };

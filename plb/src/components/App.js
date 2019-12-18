@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Media from 'react-media';
 
+
 import '../resources/css/slideShow.css';
 
 import Home from './Home.js';
@@ -12,6 +13,7 @@ import Header from './Header.js';
 import Footer from './Footer.js'
 import Project from './Project.js';
 import Slideshow from './fragments/Slideshow';
+import MobileHeader from './mobileComponents/MobileHeader';
 
 
 class App extends Component {
@@ -200,7 +202,7 @@ class App extends Component {
                     <Fragment>
                         {matches.small && 
                         <Fragment>
-                            
+                           
                         </Fragment>
                         }
                         {matches.medium && 
