@@ -18,6 +18,7 @@ import MobileHeader from './mobileComponents/MobileHeader';
 import MobileAbout from './mobileComponents/MobileAbout';
 import MobileProject from './mobileComponents/MobileProject';
 import MobileFooter from './mobileComponents/MobileFooter';
+import MobileContact from './mobileComponents/MobileContact';
 
 
 
