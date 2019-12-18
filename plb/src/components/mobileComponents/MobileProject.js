@@ -13,7 +13,7 @@ class Project extends Component{
     }
     render(){
         return(<div>
-            <MobilePost images={this.state.vasagatanImages[0]}  state="image"/>
+            <MobilePost image={this.state.vasagatanImages[0]} state="image"/>
             <MobilePost title={this.props.content.vasagatanTitle} text={this.props.content.vasagatanText} imgText={this.props.content.imgText} state="text"/>
             <MobilePost image={this.state.vasagatanImages[0]} state="image"/>
             <MobilePost title={this.props.content.westBridgeTitle} text={this.props.content.westBridgeText} />
