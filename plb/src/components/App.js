@@ -13,6 +13,8 @@ import Footer from './Footer.js'
 import Project from './Project.js';
 import Slideshow from './fragments/Slideshow';
 
+import MobileAbout from './mobileComponents/MobileAbout';
+
 
 class App extends Component {
     constructor(props) {
@@ -200,7 +202,18 @@ class App extends Component {
                     <Fragment>
                         {matches.small && 
                         <Fragment>
-                            
+                            <BrowserRouter>
+                                    <Route exact path="/" component={Home} />
+                                    <Route exact path="/about"
+                                        render={(props) => <MobileAbout content={this.checkLanguage() ? this.state.swe.aboutText : this.state.eng.aboutText} sigil={this.checkLanguage() ? this.state.swe.sigil : this.state.eng.sigil} />}
+                                    />
+                                    <Route exact path="/contact"
+                                        render={(props) => <Contact content={this.checkLanguage() ? this.state.swe.contactText : this.state.eng.contactText} />}
+                                    />
+                                    <Route exact path="/project"
+                                        render={(props) => <Project content={this.checkLanguage() ? this.state.swe.projectText : this.state.eng.projectText} />}
+                                    />
+                                </BrowserRouter>
                         </Fragment>
                         }
                         {matches.medium && 
