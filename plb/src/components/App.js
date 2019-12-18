@@ -17,7 +17,7 @@ import Slideshow from './fragments/Slideshow';
 import MobileHeader from './mobileComponents/MobileHeader';
 import MobileAbout from './mobileComponents/MobileAbout';
 import MobileProject from './mobileComponents/MobileProject';
-import MobileHeaderBar from './mobileComponents/MobileHeaderBar';
+import MobileFooter from './mobileComponents/MobileFooter';
 
 
 
@@ -221,6 +221,7 @@ class App extends Component {
                                         render={(props) => <MobileProject content={this.checkLanguage() ? this.state.swe.projectText : this.state.eng.projectText} />}
                                     />
                                 </BrowserRouter>
+                                <MobileFooter content={this.checkLanguage() ? this.state.swe.footer : this.state.eng.footer} />
                         </Fragment>
                         }
                         {matches.medium && 
