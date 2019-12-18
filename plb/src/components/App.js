@@ -205,7 +205,7 @@ class App extends Component {
                         {matches.small && 
                         <Fragment>
                             <MobileHeader content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage}/>
-                            {/* <BrowserRouter>
+                            <BrowserRouter>
                                     <Route exact path="/" component={Home} />
                                     <Route exact path="/about"
                                         render={(props) => <MobileAbout content={this.checkLanguage() ? this.state.swe.aboutText : this.state.eng.aboutText} sigil={this.checkLanguage() ? this.state.swe.sigil : this.state.eng.sigil} />}
@@ -216,7 +216,7 @@ class App extends Component {
                                     <Route exact path="/project"
                                         render={(props) => <Project content={this.checkLanguage() ? this.state.swe.projectText : this.state.eng.projectText} />}
                                     />
-                                </BrowserRouter> */}
+                                </BrowserRouter>
                         </Fragment>
                         }
                         {matches.medium && 
