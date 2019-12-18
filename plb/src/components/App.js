@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Media from 'react-media';
-
+import Navbar from 'react-bootstrap/Navbar'
 
 import '../resources/css/slideShow.css';
 
@@ -17,7 +17,7 @@ import Slideshow from './fragments/Slideshow';
 import MobileHeader from './mobileComponents/MobileHeader';
 import MobileAbout from './mobileComponents/MobileAbout';
 import MobileProject from './mobileComponents/MobileProject';
-import MobileContact from './mobileComponents/MobileContact';
+import MobileFooter from './mobileComponents/MobileFooter';
 
 
 
@@ -207,6 +207,7 @@ class App extends Component {
                     <Fragment>
                         {matches.small && 
                         <Fragment>
+                            {/* <MobileHeaderBar content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage}/> */}
                             <MobileHeader content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage}/>
                             <BrowserRouter>
                                     <Route exact path="/" component={Home} />
@@ -220,6 +221,7 @@ class App extends Component {
                                         render={(props) => <MobileProject content={this.checkLanguage() ? this.state.swe.projectText : this.state.eng.projectText} />}
                                     />
                                 </BrowserRouter>
+                                <MobileFooter content={this.checkLanguage() ? this.state.swe.footer : this.state.eng.footer} />
                         </Fragment>
                         }
                         {matches.medium && 
