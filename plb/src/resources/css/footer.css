@@ -19,6 +19,16 @@
     font-size: 7vw;
     padding-top: 0; 
 }
+.p5{
+    margin-top: 0;
+    font-size: 3vw;
+}
+.padding-top{
+    padding-top: 2vw;
+}
+.padding-bottom{
+    padding-bottom: 2vw;
+}
 .align-text{
     padding-top: 0;
 }
