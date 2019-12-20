@@ -16,15 +16,15 @@ class ContactCard extends Component {
         className="contact-box-layout bottom-border"
       >
         <Row style={{height:"100%", padding:"50px 50px 50px 50px"}}>
-          <Col md={5} style={{ height: "100%",textAlign:"left" }}>
+          <Col md={6} style={{ height: "100%",textAlign:"right" }}>
             <img
               style={{maxHeight:"100%"}}
               src={this.props.image}
             />
           </Col>
-          <Col md={7}>
+          <Col md={6}>
             <Row style={{textAlign:"left"}}>
-              <Container style={{textAlign:"left", margin:"0 0 0 0px", padding:"100px 0 0 0"}}>
+              <Container style={{textAlign:"left", margin:"0 0 0 0px", padding:"100px 0 0 200px"}}>
                 <h1 className="post-standard-header">{this.props.title}</h1>
                 <a
                   className="post-standard-text contact-links"

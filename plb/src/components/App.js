@@ -201,10 +201,10 @@ class App extends Component {
         return true;
     }
     render() {
-        return (<div>
+        return (<div style={{height:"100vh", width:"100vw"}}>
             <Media queries={{
-                small: "(max-width: 774px)",
-                medium: "(min-width: 775px)"
+                small: "(max-width: 1025px)",
+                medium: "(min-width: 1024px)"
             }}>
                 {matches => (
                     <Fragment>
@@ -213,7 +213,7 @@ class App extends Component {
                             {/* <MobileHeaderBar content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage}/> */}
                             <MobileHeader content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage}/>
                             <BrowserRouter>
-                                    <Route exact path="/" component={Home} />
+                        <Route exact path="/" render={(props)=> <Home fadeProperties={this.state.fadeProperties} fadeImages={this.state.images}/>}/>
                                     <Route exact path="/about"
                                         render={(props) => <MobileAbout content={this.checkLanguage() ? this.state.swe.aboutText : this.state.eng.aboutText} sigil={this.checkLanguage() ? this.state.swe.sigil : this.state.eng.sigil} />}
                                     />
@@ -232,7 +232,7 @@ class App extends Component {
                                 <Header content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage} />
                                 <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} />
                                 <BrowserRouter>
-                                    <Route exact path="/" component={Home} />
+                                    <Route exact path="/" />
                                     <Route exact path="/about"
                                         render={(props) => <About content={this.checkLanguage() ? this.state.swe.aboutText : this.state.eng.aboutText} sigil={this.checkLanguage() ? this.state.swe.sigil : this.state.eng.sigil} />}
                                     />

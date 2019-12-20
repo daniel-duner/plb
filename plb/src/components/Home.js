@@ -3,8 +3,6 @@ import React,{Component} from 'react';
 
 import '../resources/css/slideShow.css';
 import Slideshow from './fragments/Slideshow';
-import Post from './fragments/Post';
-import PostText from './fragments/PostText';
 
 
 
@@ -14,8 +12,9 @@ class Home extends Component{
         
     }
     render(){
-        return(<div>
-        </div>);
+        return(
+            <Slideshow fadeProperties={this.props.fadeProperties} fadeImages={this.props.fadeImages} />
+        );
     };
 }
 

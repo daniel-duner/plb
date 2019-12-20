@@ -10,7 +10,7 @@ class Post extends Component {
   renderImage = () => {
     return <Col className="align-center">
                 <img 
-                style={{ paddingTop: "0px", padding: "2vw 2vw 2vw 2vw" }} 
+                style={{ padding: "2vw 2vw 2vw 2vw" }} 
                 className="d-block w-100" 
                 src={this.props.image}
                 />
