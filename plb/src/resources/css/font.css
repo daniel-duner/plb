@@ -29,6 +29,11 @@
 }
 
 .post-standard-text{
+    font-size: 20px;
+    font-family: 'Jura', sans-serif;
+    text-align: left;
+}
+.post-mobile-text{
     font-size: 15px;
     font-family: 'Jura', sans-serif;
     text-align: left;

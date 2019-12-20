@@ -7,17 +7,19 @@ class About extends Component{
     constructor (props){
         super(props);
         this.state = {
-            carouselImages:[require("../resources/img/consHD_1.jpg"),require("../resources/img/consHD_2.jpg"),require("../resources/img/consHD_3.jpg")],
-            img_1: [require("../resources/img/about/digital-marketing-agency.jpg")],
+            img_1: require("../resources/img/about/handshake_2.jpg"),
+            img_2: require("../resources/img/about/trust.png"),
+            img_3: require("../resources/img/about/planing.jpg"),
+            img_4: require("../resources/img/about/helmet.jpg")
         }
     }
 
     render(){
         return (<div>
-            <Post carouselImages={this.state.carouselImages} title={this.props.content.listFactsTitle} list={this.props.content.listFacts} imagePosition="right" sigil={this.props.sigil} />
-            <Post carouselImages={this.state.img_1} title={this.props.content.listValuesTitle}  list={this.props.content.listValues} carouselSettings={this.state.carouselSettings} imagePosition="left"/>
-            <Post carouselImages={this.state.carouselImages}  title={this.props.content.listIdeaTitle} list={this.props.content.listIdea} imagePosition="left"/>
-            <Post carouselImages={this.state.carouselImages} text={this.state.textGallerySlussen} title={this.props.content.listSystemTitle}  list={this.props.content.listSystem} imagePosition="right"/>
+            <Post image={this.state.img_1} title={this.props.content.listFactsTitle} list={this.props.content.listFacts} imagePosition="right" sigil={this.props.sigil} />
+            <Post image={this.state.img_2} title={this.props.content.listValuesTitle}  list={this.props.content.listValues} carouselSettings={this.state.carouselSettings} imagePosition="left"/>
+            <Post image={this.state.img_3}  title={this.props.content.listIdeaTitle} list={this.props.content.listIdea} imagePosition="left"/>
+            <Post image={this.state.img_4} text={this.state.textGallerySlussen} title={this.props.content.listSystemTitle}  list={this.props.content.listSystem} imagePosition="right"/>
         </div>);
 
     };

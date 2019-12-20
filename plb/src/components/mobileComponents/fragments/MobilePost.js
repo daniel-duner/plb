@@ -25,7 +25,7 @@ class MobilePosts extends React.Component {
             <ul >
                 {this.props.list?this.props.list.map((item) =><li className="post-standard-text">{item}</li>):""}
             </ul>
-            <p class="post-standard-text">
+            <p class="post-mobile-text">
                 {this.props.text?this.props.text:""}
             </p>
             {this.props.sigil
@@ -36,8 +36,8 @@ class MobilePosts extends React.Component {
             :
             ""
             }
-            {this.props.email?<a className="post-standard-text contact-links" style={{ padding: "-10px 20px 0px 20px", display: "block" }} href={"mailto:" + this.props.email}>{this.props.email}</a>:""}
-            {this.props.phone?<a className="post-standard-text contact-links" style={{ padding: "-10px 20px 0px 20px", display: "block" }} href={"tel:" + this.props.phone}>{this.props.phone}</a>:""}
+            {this.props.email?<a className="post-mobile-text contact-links" style={{ padding: "-10px 20px 0px 20px", display: "block" }} href={"mailto:" + this.props.email}>{this.props.email}</a>:""}
+            {this.props.phone?<a className="post-mobile-text contact-links" style={{ padding: "-10px 20px 0px 20px", display: "block" }} href={"tel:" + this.props.phone}>{this.props.phone}</a>:""}
             </Container>
         );
     }

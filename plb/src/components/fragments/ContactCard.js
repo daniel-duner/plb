@@ -1,51 +1,53 @@
-import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import React, { Component } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 
-
-import '../../resources/css/font.css';
-import '../../resources/css/contactCard.css';
-
+import "../../resources/css/font.css";
+import "../../resources/css/contactCard.css";
 
 class ContactCard extends Component {
-    render() {
-
-        return (
-            <Container fluid className="box-layout bottom-border">
-                <Row>
-                    <Col className="align-center" style={{ paddingTop: "0px", paddingLeft: "70px" }} md={4}>
-
-                        {this.props.carouselImages.map((picture) =>
-
-                            <img style={{ width: "75%" }}
-                                className="d-block img-fluid"
-                                src={picture.toString()}
-                            />
-
-                        )}
-
-                    </Col>
-                    <Col className="text-center" md={8}>
-                        <Row>
-                            <Container style={{ padding: "50px 100px 0px 100px" }}>
-                                <h1 className="post-standard-header">{this.props.title}</h1>
-                                <a className="post-standard-text contact-links" style={{ padding: "-10px 20px 0px 20px", display: "block" }} href={"mailto:" + this.props.email}>{this.props.email}</a>
-                                <a className="post-standard-text contact-links" style={{ padding: "-10px 20px 0px 20px", display: "block" }} href={"tel:" + this.props.phone}>{this.props.phone}</a>
-                                {/* <p className="post-standard-text">{this.props.text}</p> */}
-                            </Container>
-                        </Row>
-                        <Row>
-                            <Container style={{ padding: "50px 100px 50px 100px" }}>
-
-
-                            </Container>
-                        </Row>
-                    </Col>
-                </Row>
-            </Container>
-        );
-    };
+  render() {
+    return (
+      <Container
+        style={{ padding: "0" }}
+        fluid
+        className="contact-box-layout bottom-border"
+      >
+        <Row style={{height:"100%", padding:"50px 50px 50px 50px"}}>
+          <Col md={5} style={{ height: "100%",textAlign:"left" }}>
+            <img
+              style={{maxHeight:"100%"}}
+              src={this.props.image}
+            />
+          </Col>
+          <Col md={7}>
+            <Row style={{textAlign:"left"}}>
+              <Container style={{textAlign:"left", margin:"0 0 0 0px", padding:"100px 0 0 0"}}>
+                <h1 className="post-standard-header">{this.props.title}</h1>
+                <a
+                  className="post-standard-text contact-links"
+                  style={{ display: "block" }}
+                  href={"mailto:" + this.props.email}
+                >
+                  {this.props.email}
+                </a>
+                <a
+                  className="post-standard-text contact-links"
+                  style={{ display: "block" }}
+                  href={"tel:" + this.props.phone}
+                >
+                  {this.props.phone}
+                </a>
+                {/* <p className="standard-text">{this.props.text}</p> */}
+              </Container>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
 }
 
 export default ContactCard;

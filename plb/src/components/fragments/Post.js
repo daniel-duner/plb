@@ -8,12 +8,23 @@ import "../../resources/css/font.css";
 
 class Post extends Component {
   renderImage = () => {
-    return <Col className="align-center" style={{ paddingTop: "0px", paddingLeft: "60px" }}>
-                <img className="d-block w-100" src={this.props.carouselImages[0].toString()}/>
+    return <Col className="align-center">
+                <img 
+                style={{ paddingTop: "0px", padding: "2vw 2vw 2vw 2vw" }} 
+                className="d-block w-100" 
+                src={this.props.image}
+                />
            </Col>
   }
   renderList = () =>{
-    return <ul>{this.props.list.map(item => (<li className="post-standard-text">{item}</li>))}</ul>
+    return <ul>
+      {this.props.list.map(item => (<li
+        key={item}
+        className="post-standard-text"
+        style={{listStyleType: "square"}}
+      >{item}
+      </li>))}
+      </ul>
   }
   renderHeader = () =>{
       return <h1 className="post-standard-header">{this.props.title}</h1>

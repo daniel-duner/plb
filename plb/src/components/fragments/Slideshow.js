@@ -6,7 +6,7 @@ import '../../resources/css/slideShow.css';
 
 class Slideshow extends Component {
   render() {
-    var textStyle = {
+    let textStyle = {
       position: 'absolute',
       width: '100%',
       height: '100%',
