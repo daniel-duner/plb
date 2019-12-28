@@ -33,11 +33,11 @@ class App extends Component {
                 arrows: false
             },
             images: [
-                require("../resources/img/homePhotos/3.jpg"),
-                // require("../resources/img/homePhotos/2.jpg"),
-                require("../resources/img/homePhotos/1.jpg"),
-                // require("../resources/img/homePhotos/7.jpg"),
                 require("../resources/img/homePhotos/4.jpg"),
+                require("../resources/img/homePhotos/3.jpg"),
+                require("../resources/img/homePhotos/1.jpg"),
+                // require("../resources/img/homePhotos/2.jpg"),
+                // require("../resources/img/homePhotos/7.jpg"),
                // require("../resources/img/homePhotos/5.jpg"),
             ],
             mobileImages:[
@@ -117,7 +117,7 @@ class App extends Component {
                 },
                 contactText: {
                     mainTitle: "Våra medarbetare",
-                    mapsTitle: "Hitta hit"
+                    mapsTitle: "Hitta till oss"
                 }
             },
             eng: {
@@ -188,7 +188,7 @@ class App extends Component {
                 },
                 contactText: {
                     mainTitle: "Our coworkers",
-                    mapsTitle: "Office"
+                    mapsTitle: "Find us"
                 }
             },
 
