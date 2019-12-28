@@ -40,6 +40,14 @@ class App extends Component {
                 require("../resources/img/homePhotos/4.jpg"),
                // require("../resources/img/homePhotos/5.jpg"),
             ],
+            mobileImages:[
+                require("../resources/img/homePhotos/mobile1.jpg"),
+                
+                // require("../resources/img/homePhotos/1.jpg"),
+                
+                // require("../resources/img/homePhotos/4.jpg"),
+               
+            ],
             swe: {
                 sigil: {
                     title: "Sigillet är utfärdat av UC AB. Klicka på bilden för information om UC:s Riskklasser.",
@@ -109,7 +117,7 @@ class App extends Component {
                 },
                 contactText: {
                     mainTitle: "Våra medarbetare",
-                    mapsTitle: "Kontor"
+                    mapsTitle: "Hitta hit"
                 }
             },
             eng: {
@@ -212,7 +220,7 @@ class App extends Component {
                             {/* <MobileHeaderBar content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage}/> */}
                             <MobileHeader content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage}/>
                             <BrowserRouter>
-                        <Route exact path="/" render={(props)=> <Home fadeProperties={this.state.fadeProperties} fadeImages={this.state.images}/>}/>
+                        <Route exact path="/" render={(props)=> <Home fadeProperties={this.state.fadeProperties} fadeImages={this.state.mobileImages}/>}/>
                                     <Route exact path="/about"
                                         render={(props) => <MobileAbout content={this.checkLanguage() ? this.state.swe.aboutText : this.state.eng.aboutText} sigil={this.checkLanguage() ? this.state.swe.sigil : this.state.eng.sigil} />}
                                     />
