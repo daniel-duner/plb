@@ -17,11 +17,11 @@ class Post extends Component {
            </Col>
   }
   renderList = () =>{
-    return <ul>
+    return <ul style={{listStyleType: "none",padding: "0"}}>
       {this.props.list.map(item => (<li
         key={item}
         className="post-standard-text"
-        style={{listStyleType: "square"}}
+        style={{marginTop: "3vh",lineHeight: "100%"}}
       >{item}
       </li>))}
       </ul>
@@ -39,7 +39,7 @@ class Post extends Component {
   </a>
   }
   renderText = ()  => {
-    return <p className="post-standard-text">{this.props.text}</p>
+    return <p className="post-standard-text" >{this.props.text}</p>
   }
 
   render() {
