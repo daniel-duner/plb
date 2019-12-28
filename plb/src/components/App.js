@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Media from 'react-media';
-import Navbar from 'react-bootstrap/Navbar'
 
 import '../resources/css/slideShow.css';
 
@@ -21,7 +20,6 @@ import MobileFooter from './mobileComponents/MobileFooter';
 import MobileContact from './mobileComponents/MobileContact';
 
 
-
 class App extends Component {
     constructor(props) {
         super(props);
@@ -35,11 +33,12 @@ class App extends Component {
                 arrows: false
             },
             images: [
-                require("../resources/img/homePhotos/3.jpg"),
+                // require("../resources/img/homePhotos/3.jpg"),
+                require("../resources/img/homePhotos/2.jpg"),
                 require("../resources/img/homePhotos/1.jpg"),
-                require("../resources/img/homePhotos/4.jpg"),
+                require("../resources/img/homePhotos/7.jpg"),
+                // require("../resources/img/homePhotos/4.jpg"),
                // require("../resources/img/homePhotos/5.jpg"),
-                //require("../resources/img/homePhotos/2.jpg")
             ],
             swe: {
                 sigil: {

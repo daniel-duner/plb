@@ -7,7 +7,7 @@ import '../resources/css/font.css';
 class Header extends Component{
     render(){
         return (
-        <Navbar sticky="top" style={{backgroundColor: "white"}}variant="light">
+        <Navbar   fixed="top" style={{backgroundColor: "white"}}variant="light">
             <Navbar.Brand className="brand" href="/">Projektledningsbyrån</Navbar.Brand>
             <Nav className="mr-auto navbar">
               <Nav.Link className="nav-font-color" href="/">{this.props.content.listLinks[0]}</Nav.Link>
