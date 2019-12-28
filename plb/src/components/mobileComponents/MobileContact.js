@@ -12,7 +12,6 @@ class Contact extends Component {
     }
     render() {
         return (<div>
-            <MobilePost title={this.props.content.mainTitle} />
             <MobilePost image={[require("../../resources/img/contact/johan.jpg")]} state="image"/>
             <MobilePost email="johan.hedenstrom@projektledningsbyran.se" phone="070-744 0850" title="Johan Hedenström" />
             <MobilePost image={[require("../../resources/img/contact/fredrik.jpg")]} state="image"/>
