@@ -142,49 +142,47 @@ class App extends Component {
                     ]
                 },
                 aboutText: {
-                    listFactsTitle: "About",
+                    listFactsTitle: "In brief",
                     listFacts: [
-                        "Project management, project management and construction management of land and infrastructure projects",
-                        "Operating since 2012",
-                        "Companies with strong liquidity. UC risk class 1",
-                        "All employees possess both theoretical and practical project management skills"
+                        "Project management, project design management and construction management for land and infrastructure projects",
+                        "Active since 2012",
+                        "Company with strong liquidity. UC risk class of one",
+                        "All employees possess both theoretical and practical project management expertise"
                     ],
 
                     listValuesTitle: "Values",
                     listValues: [
                         "Solution-oriented, customer-focused and project-focused service company",
-                        "The customer and the goal of the project are always protected",
-                        "The people in projects are individuals who create teams.  Professional, curious and learning",
-                        "Always takes responsibility for work done"
+                        "Customer and project goals always comes first",
+                        "Projects are driven by individuals who come together to form a team. Professional, curious and always learning",
+                        "We always take responsibility for the work we do"
                     ],
 
                     listIdeaTitle: "Business Concept",
                     listIdea: [
                         "Strong brand in the industry with qualified resources for the management of land and infrastructure projects",
-                        "Customer-focused service companies working for long-term business relationships"
+                        "Customer-focused service company that works to build and nurture long-term business relationships"
                     ],
 
-                    listSystemTitle: "Operating systems- KMA",
+                    listSystemTitle: "Business system – KMA",
                     listSystem: [
-                        "Long-term business relationships require knowledge and knowledge how the right quality is achieved. The right quality is achieved by carrying out the right tasks. Our business system helps us in the process of doing the right tasks and getting long-term business relationships.",
-                        "Our internal business system is structured to meet requirements in SS-EN ISO 9001:2015, 14001:2015 and 45001:2018. The operating system includes functioning support processes established with support based on SS-ISO 21500:2012 for mission management/ project management/ project management/ construction management/ construction management."
+                        "Long-term business relationships require knowledge and an understanding of how to achieve the right results. The right results are obtained by performing the right tasks. Our business system helps us in our work to perform the right tasks and to secure long-term business relationships.",
+                        "Our internal business system has been designed to comply with the requirements set out in SS-EN ISO 9001:2015, 14001:2015 and 45001:2018. The business system incorporates functioning support processes which have been established with support from SS-ISO 21500:2012 for task management / project management / project design management / construction management."
                     ],
                 },
                 projectText: {
                     imgText: "Photo: Stockholm stad",
-                    vasagatanTitle: "Project Vasagatan",
-                    vasagatanText: "The part of Vasagatan between Tegelbacken and Norra Bantorget is being rebuilt to meet the needs of today and the future. The new Vasagatan will be a welcoming, safer and more vibrant city street with the people in the city centre. Project volume approximately 300 MSEK. The project management agency's mission is project and design management. The mission began in 2019 and is ongoing.",
+                    vasagatanTitle: "Vasagatan Project",
+                    vasagatanText: "The central Stockholm street of Vasagatan between Tegelbacken and Norra Bantorget is being rebuilt to meet the needs of today and the future. The new Vasagatan area will be a welcoming, safer and more lively urban street that puts people in the centre. The project volume is approximately SEK 300 million. The task of the project management agency is to undertake project and project design management. The task began in 2019 and is ongoing.",
 
-                    westBridgeTitle: "Project Västerbron",
-                    westBridgeText: "Västerbron was completed in 1935 and consists of two bridges, bridge over Riddarfjärden and bridge over Pålsundet.  The project includes the investigation of Västerbron's constructive state and the development of proposals for measures to ensure future function. Project volume approximately 15 MSEK. The project management agency's assignment is project management and design management. The mission began in 2018 and is ongoing.",
+                    westBridgeTitle: "Västerbron Project",
+                    westBridgeText: "Västerbron was completed in 1935 and consists of two bridges, one over the bay of Riddarfjärden and another over the strait of Pålsundet. The project comprises a study into the structural condition of Västerbron and to put forward proposals as to how its functionality can be safeguarded for the future. The project volume is approximately SEK 15 million. The task of the project management agency is to undertake project management and project design management. The task began in 2018 and is ongoing.",
 
-                    vasaBridgeTitle: "Project Vasabron",
-                    vasaBridgeText: "Vasabron was completed in 1878 and consists of seven arch bridges linking Old Town with Norrmalm. The project includes the investigation of Vasabron's constructive state and the development of proposals for measures to ensure future function. Project volume approximately 15 MSEK. The project management agency's assignment is project management and design management. The mission began in 2019 and is ongoing.",
+                    vasaBridgeTitle: "Vasabron Project",
+                    vasaBridgeText: "Vasabron was completed in 1878 and consists of seven arch bridges which connect the Stockholm island of Gamla Stan to Norrmalm. The project comprises a study into the structural condition of Vasabron and to put forward proposals as to how its functionality can be safeguarded for the future. The project volume is approximately SEK 15 million. The task of the project management agency is to undertake project management and project design management. The task began in 2019 and is ongoing.",
 
-                    slussenTitle: "Project Slussen",
-                    slussenText: "After over 80 years, the lock is worn out and is therefore built from scratch. The area is adapted to meet the needs of today's and tomorrow's Stockholmers and the future Slussen will be an efficient and safe hub for pedestrians, cyclists and public transport. " +
-                        "Project volume approximately 12 000 MSEK. The project management agency's mission has been the project management of one of three sub-areas of the investigation, planning and implementation phase. The mission began in 2012 and ended in 2018."
-
+                    slussenTitle: "Slussen Project",
+                    slussenText: "After over eighty years, the central commuter hub of Slussen is no longer fit for purpose and is being rebuilt from scratch. The area is being adapted to meet the needs of Stockholmers both today and tomorrow. The Slussen of the future will be an efficient and secure hub for pedestrians, cyclists and public transport. The project volume is approximately SEK 12,000 million. The task of the project management agency was to provide project management for one of the three sub-areas in the study, design, planning and implementation phases. The task began in 2012 and was completed in 2018."
                 },
                 contactText: {
                     mainTitle: "Our coworkers",
