@@ -9,8 +9,8 @@ class Project extends Component{
     constructor (props){
         super(props);
         this.state = {
-            imgVasagatan: require("../resources/img/project/Vasagatan_1.png"),
-            imgSlussen: require("../resources/img/project/slussen_3.jpg"),
+            imgVasagatan: require("../resources/img/project/vasagatan.jpg"),
+            imgSlussen: require("../resources/img/project/slussen.jpg"),
             imgVasabron: require("../resources/img/project/vasabron.jpg"),
             imgVasterbron: require("../resources/img/project/vasterbron.jpg"),
         }

@@ -8,10 +8,10 @@ class About extends Component{
     constructor (props){
         super(props);
         this.state = {
-            img_1: require("../../resources/img/about/handshake_2.jpg"),
-            img_2: require("../../resources/img/about/trust.png"),
-            img_3: require("../../resources/img/about/planing.jpg"),
-            img_4: require("../../resources/img/about/helmet.jpg")
+            img_1: require("../../resources/img/about/mobileHandshake.jpg"),
+            img_2: require("../../resources/img/about/mobileTrust.jpg"),
+            img_3: require("../../resources/img/about/mobilePlaning.jpg"),
+            img_4: require("../../resources/img/about/mobileHelmet.jpg")
         }
     }
 

@@ -33,7 +33,7 @@ class App extends Component {
                 arrows: false
             },
             images: [
-                require("../resources/img/homePhotos/4.jpg"),
+                require("../resources/img/homePhotos/2.jpg"),
                 require("../resources/img/homePhotos/3.jpg"),
                 require("../resources/img/homePhotos/1.jpg"),
                 // require("../resources/img/homePhotos/2.jpg"),
@@ -41,6 +41,8 @@ class App extends Component {
                // require("../resources/img/homePhotos/5.jpg"),
             ],
             mobileImages:[
+                require("../resources/img/homePhotos/mobile2.jpg"),
+                require("../resources/img/homePhotos/mobile3.jpg"),
                 require("../resources/img/homePhotos/mobile1.jpg"),
                 
                 // require("../resources/img/homePhotos/1.jpg"),
