@@ -36,18 +36,12 @@ class App extends Component {
                 require("../resources/img/homePhotos/2.jpg"),
                 require("../resources/img/homePhotos/3.jpg"),
                 require("../resources/img/homePhotos/1.jpg"),
-                // require("../resources/img/homePhotos/2.jpg"),
-                // require("../resources/img/homePhotos/7.jpg"),
-               // require("../resources/img/homePhotos/5.jpg"),
+                
             ],
             mobileImages:[
                 require("../resources/img/homePhotos/mobile2.jpg"),
                 require("../resources/img/homePhotos/mobile3.jpg"),
                 require("../resources/img/homePhotos/mobile1.jpg"),
-                
-                // require("../resources/img/homePhotos/1.jpg"),
-                
-                // require("../resources/img/homePhotos/4.jpg"),
                
             ],
             swe: {
@@ -72,6 +66,7 @@ class App extends Component {
                     ]
                 },
                 aboutText: {
+                    
                     listFactsTitle: "Om oss",
                     listFacts: [
                         "Projektledning, projekteringsledning och byggledning av mark- och infrastrukturprojekt",
@@ -143,7 +138,7 @@ class App extends Component {
                         "Find us"
                     ]
                 },
-                aboutText: {
+                aboutText: {                    
                     listFactsTitle: "In brief",
                     listFacts: [
                         "Project management, project design management and construction management for land and infrastructure projects",

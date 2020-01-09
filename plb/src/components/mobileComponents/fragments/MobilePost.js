@@ -12,6 +12,9 @@ class MobilePosts extends React.Component {
                     className="d-block w-100"
                     src={this.props.image}
                 />
+                <p class="post-mobile-text" style={{padding: "2vw 2vw 0vw 2vw"}} >
+                    {this.props.imgText ? this.props.imgText : ""}
+                </p>
             </div>
         );
     }
