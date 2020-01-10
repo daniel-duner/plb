@@ -13,10 +13,10 @@ class Project extends Component{
                 "Project image Vasabron",
                 "Project image Slussen"
             ],
-            imgVasagatan: require("../../resources/img/project/mobileVasagatan.jpg"),
-            imgSlussen: require("../../resources/img/project/mobileSlussen.jpg"),
-            imgVasabron: require("../../resources/img/project/mobileVasabron.jpg"),
-            imgVasterbron: require("../../resources/img/project/mobileVasterbron.jpg"),
+            imgVasagatan: require("../../resources/img/project/mobileVasagatan.WebP"),
+            imgSlussen: require("../../resources/img/project/mobileSlussen.WebP"),
+            imgVasabron: require("../../resources/img/project/mobileVasabron.WebP"),
+            imgVasterbron: require("../../resources/img/project/mobileVasterbron.WebP"),
         }
     }
     render(){

@@ -15,10 +15,10 @@ class About extends Component{
                 "Safety image"
             ],
             altSigil: "UC sigil highest rating",
-            img_1: require("../../resources/img/about/mobileHandshake.jpg"),
-            img_2: require("../../resources/img/about/mobileTrust.jpg"),
-            img_3: require("../../resources/img/about/mobilePlaning.jpg"),
-            img_4: require("../../resources/img/about/mobileHelmet.jpg")
+            img_1: require("../../resources/img/about/mobileHandshake.WebP"),
+            img_2: require("../../resources/img/about/mobileTrust.WebP"),
+            img_3: require("../../resources/img/about/mobilePlaning.WebP"),
+            img_4: require("../../resources/img/about/mobileHelmet.WebP")
         }
     }
 

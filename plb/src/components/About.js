@@ -14,10 +14,10 @@ class About extends Component{
                 "Safety image"
             ],
             altSigil: "UC sigil highest rating",
-            img_1: require("../resources/img/about/handshake.jpg"),
-            img_2: require("../resources/img/about/trust.jpg"),
-            img_3: require("../resources/img/about/planing.jpg"),
-            img_4: require("../resources/img/about/helmet.jpg"),
+            img_1: require("../resources/img/about/handshake.WebP"),
+            img_2: require("../resources/img/about/trust.WebP"),
+            img_3: require("../resources/img/about/planing.WebP"),
+            img_4: require("../resources/img/about/helmet.WebP"),
         }
     }
 

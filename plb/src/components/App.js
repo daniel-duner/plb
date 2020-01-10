@@ -34,15 +34,15 @@ class App extends Component {
             },
             images: [
                 { 
-                    img: require("../resources/img/homePhotos/2.jpg"),
+                    img: require("../resources/img/homePhotos/2.WebP"),
                     alt: "Stockholm night"
                 },
                 { 
-                    img: require("../resources/img/homePhotos/3.jpg"),
+                    img: require("../resources/img/homePhotos/3.WebP"),
                     alt: "Stockholm sunset"
                 },
                 { 
-                    img: require("../resources/img/homePhotos/1.jpg"),
+                    img: require("../resources/img/homePhotos/1.WebP"),
                     alt: "Cranes"
                 },
                 
@@ -50,15 +50,15 @@ class App extends Component {
             ],
             mobileImages: [
                 { 
-                    img: require("../resources/img/homePhotos/mobile2.jpg"),
+                    img: require("../resources/img/homePhotos/mobile2.WebP"),
                     alt: "Stockholm night"
                 },
                 { 
-                    img: require("../resources/img/homePhotos/mobile3.jpg"),
+                    img: require("../resources/img/homePhotos/mobile3.WebP"),
                     alt: "Stockholm sunset"
                 },
                 { 
-                    img: require("../resources/img/homePhotos/mobile1.jpg"),
+                    img: require("../resources/img/homePhotos/mobile1.WebP"),
                     alt: "Cranes"
                 },
 
@@ -106,7 +106,7 @@ class App extends Component {
 
                     listSystemTitle: "Verksamhetsystem KMA",
                     listSystem: ["Långsiktiga affärsrelationer kräver kännedom och kunskap hur rätt kvalitet uppnås. Rätt kvalitet uppnås genom utförande av rätt arbetsuppgifter. Vårt verksamhetssystem hjälper oss i arbetet med att göra rätt arbetsuppgifter och att få långsiktiga affärsrelationer.",
-                        "Vårt företagsinterna verksamhetssystem är uppbyggt för att uppfylla krav i SS-EN ISO 9001, 14001 samt 45001. I verksamhetssystemet ingår fungerande stödprocesser upprättade med stöd utifrån SS-ISO 21500 för uppdragsledning/projektledning/projekteringsledning/byggledning."],
+                        "Vårt företagsinterna verksamhetssystem är uppbyggt för att uppfylla krav i SS-EN ISO 9001, 14001 samt 45001. I verksamhetssystemet ingår fungerande stödprocesser upprättade med stöd utifrån SS-ISO 21500 för uppdragsledning, projektledning, projekteringsledning och byggledning."],
                 },
                 projectText: {
                     imgText: [
@@ -185,7 +185,7 @@ class App extends Component {
                     listSystemTitle: "Business system – KMA",
                     listSystem: [
                         "Long-term business relationships require knowledge and an understanding of how to achieve the right results. The right results are obtained by performing the right tasks. Our business system helps us in our work to perform the right tasks and to secure long-term business relationships.",
-                        "Our internal business system has been designed to comply with the requirements set out in SS-EN ISO 9001, 14001 and 45001. The business system incorporates functioning support processes which have been established with support from SS-ISO 21500 for task management/project management/project design management/construction management."
+                        "Our internal business system has been designed to comply with the requirements set out in SS-EN ISO 9001, 14001 and 45001. The business system incorporates functioning support processes which have been established with support from SS-ISO 21500 for task management, project management, project design management and construction management."
                     ],
                 },
                 projectText: {

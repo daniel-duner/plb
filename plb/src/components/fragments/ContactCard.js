@@ -25,7 +25,7 @@ class ContactCard extends Component {
           </Col>
           <Col md={6}>
             <Row style={{textAlign:"left"}}>
-              <Container style={{textAlign:"left", margin:"0 0 0 0px", padding:"100px 0 0 100px"}}>
+              <Container style={{textAlign:"left", margin:"0 0 0 0px", padding:"100px 0 0 5vw"}}>
                 <h1 className="post-standard-header">{this.props.title}</h1>
                 <a
                   className="post-standard-text contact-links"
