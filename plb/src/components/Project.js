@@ -17,10 +17,10 @@ class Project extends Component{
     }
     render(){
         return(<div>
-            <Post title={this.props.content.vasagatanTitle} image={this.state.imgVasagatan} text={this.props.content.vasagatanText}  imagePosition="left" imgText={this.props.content.imgText}/>
+            <Post title={this.props.content.vasagatanTitle} image={this.state.imgVasagatan} text={this.props.content.vasagatanText}  imagePosition="left" imgText={this.props.content.imgText[0]}/>
             <Post title={this.props.content.westBridgeTitle} image={this.state.imgVasterbron} text={this.props.content.westBridgeText}  imagePosition="right"/>
             <Post title={this.props.content.vasaBridgeTitle} image={this.state.imgVasabron} text={this.props.content.vasaBridgeText}  imagePosition="left"/>
-            <Post title={this.props.content.slussenTitle} image={this.state.imgSlussen} text={this.props.content.slussenText}  imagePosition="left" imgText={this.props.content.imgText}/>
+            <Post title={this.props.content.slussenTitle} image={this.state.imgSlussen} text={this.props.content.slussenText}  imagePosition="left" imgText={this.props.content.imgText[1]}/>
         </div>);
     };
 }

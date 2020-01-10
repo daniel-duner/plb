@@ -15,13 +15,13 @@ class Project extends Component{
     }
     render(){
         return(<div>
-            <MobilePost image={this.state.imgVasagatan} state="image" imgText={this.props.content.imgText}/>
+            <MobilePost image={this.state.imgVasagatan} state="image" imgText={this.props.content.imgText[0]}/>
             <MobilePost title={this.props.content.vasagatanTitle} text={this.props.content.vasagatanText}  state="text"/>
             <MobilePost image={this.state.imgVasterbron} state="image"/>
             <MobilePost title={this.props.content.westBridgeTitle} text={this.props.content.westBridgeText} />
             <MobilePost image={this.state.imgVasabron} state="image"/>
             <MobilePost title={this.props.content.vasaBridgeTitle} text={this.props.content.vasaBridgeText}  />
-           <MobilePost image={this.state.imgSlussen} state="image" imgText={this.props.content.imgText}/>
+           <MobilePost image={this.state.imgSlussen} state="image" imgText={this.props.content.imgText[1]}/>
             <MobilePost title={this.props.content.slussenTitle} text={this.props.content.slussenText} />
         </div>);
     };

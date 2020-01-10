@@ -36,13 +36,13 @@ class App extends Component {
                 require("../resources/img/homePhotos/2.jpg"),
                 require("../resources/img/homePhotos/3.jpg"),
                 require("../resources/img/homePhotos/1.jpg"),
-                
+
             ],
-            mobileImages:[
+            mobileImages: [
                 require("../resources/img/homePhotos/mobile2.jpg"),
                 require("../resources/img/homePhotos/mobile3.jpg"),
                 require("../resources/img/homePhotos/mobile1.jpg"),
-               
+
             ],
             swe: {
                 sigil: {
@@ -66,20 +66,20 @@ class App extends Component {
                     ]
                 },
                 aboutText: {
-                    
+
                     listFactsTitle: "Om oss",
                     listFacts: [
                         "Projektledning, projekteringsledning och byggledning av mark- och infrastrukturprojekt",
                         "Verksamhet sedan 2012",
                         "Teoretisk och praktisk projektledningskompetens hos samtliga medarbetare",
-                        "Företag med stark likviditet. UC riskklass 1"
+                        "Företag med stark likviditet. Högsta kreditvärdighet enligt UC."
                     ],
 
                     listValuesTitle: "Värderingar",
                     listValues: ["Lösningsinriktat, kundfokuserat och projektfokuserat tjänsteföretag",
                         "Kunden och projektets mål värnas alltid",
                         "Människorna i projekt är individer som skapar team.  Professionella, nyfikna och lärande",
-                        "Tar alltid ansvar för utfört arbete"],
+                        "Företag som alltid tar ansvar för utfört arbete"],
 
                     listIdeaTitle: "Affärsidé",
                     listIdea: ["Starkt varumärke i branschen med kvalificerade resurser för ledning av mark- och infrastrukturprojekt",
@@ -87,10 +87,13 @@ class App extends Component {
 
                     listSystemTitle: "Verksamhetsystem KMA",
                     listSystem: ["Långsiktiga affärsrelationer kräver kännedom och kunskap hur rätt kvalitet uppnås. Rätt kvalitet uppnås genom utförande av rätt arbetsuppgifter. Vårt verksamhetssystem hjälper oss i arbetet med att göra rätt arbetsuppgifter och att få långsiktiga affärsrelationer.",
-                        "Vårt företagsinterna verksamhetssystem är uppbyggt för att uppfylla krav i SS-EN ISO 9001:2015, 14001:2015 samt 45001:2018. I verksamhetssystemet ingår fungerande stödprocesser upprättade med stöd utifrån SS-ISO 21500:2012 för uppdragsledning/ projektledning/ projekteringsledning/ byggledning."],
+                        "Vårt företagsinterna verksamhetssystem är uppbyggt för att uppfylla krav i SS-EN ISO 9001, 14001 samt 45001. I verksamhetssystemet ingår fungerande stödprocesser upprättade med stöd utifrån SS-ISO 21500 för uppdragsledning/ projektledning/ projekteringsledning/ byggledning."],
                 },
                 projectText: {
-                    imgText: "Foto: Stockholm stad",
+                    imgText: [
+                        "Foto: Sweco/Stockholm stad",
+                        "Foto: Stockholm stad"
+                    ],
                     vasagatanTitle: "Projekt Vasagatan",
                     vasagatanText: "Vasagatan mellan Tegelbacken och Norra Bantorget byggs om för att möta dagens och framtidens behov. Nya Vasagatan blir en välkomnande,"
                         + "tryggare och mer levande stadsgata med människorna i centrum. Projektvolym ca 300 Mkr. Projektledningsbyråns uppdrag är projekt- och projekteringsledning." +
@@ -138,13 +141,12 @@ class App extends Component {
                         "Find us"
                     ]
                 },
-                aboutText: {                    
+                aboutText: {
                     listFactsTitle: "In brief",
                     listFacts: [
                         "Project management, project design management and construction management for land and infrastructure projects",
                         "Active since 2012",
-                        "Company with strong liquidity. UC risk class of one",
-                        "All employees possess both theoretical and practical project management expertise"
+                        "Company with strong liquidity. Highest credit rating provided by UC.",
                     ],
 
                     listValuesTitle: "Values",
@@ -152,7 +154,7 @@ class App extends Component {
                         "Solution-oriented, customer-focused and project-focused service company",
                         "Customer and project goals always comes first",
                         "Projects are driven by individuals who come together to form a team. Professional, curious and always learning",
-                        "We always take responsibility for the work we do"
+                        "Company that always take responsibility for the work we do"
                     ],
 
                     listIdeaTitle: "Business Concept",
@@ -164,11 +166,14 @@ class App extends Component {
                     listSystemTitle: "Business system – KMA",
                     listSystem: [
                         "Long-term business relationships require knowledge and an understanding of how to achieve the right results. The right results are obtained by performing the right tasks. Our business system helps us in our work to perform the right tasks and to secure long-term business relationships.",
-                        "Our internal business system has been designed to comply with the requirements set out in SS-EN ISO 9001:2015, 14001:2015 and 45001:2018. The business system incorporates functioning support processes which have been established with support from SS-ISO 21500:2012 for task management / project management / project design management / construction management."
+                        "Our internal business system has been designed to comply with the requirements set out in SS-EN ISO 9001, 14001 and 45001. The business system incorporates functioning support processes which have been established with support from SS-ISO 21500 for task management / project management / project design management / construction management."
                     ],
                 },
                 projectText: {
-                    imgText: "Photo: Stockholm stad",
+                    imgText: [
+                        "Photo: Sweco/Stockholm stad",
+                        "Photo: Stockholm stad",
+                    ],
                     vasagatanTitle: "Vasagatan Project",
                     vasagatanText: "The central Stockholm street of Vasagatan between Tegelbacken and Norra Bantorget is being rebuilt to meet the needs of today and the future. The new Vasagatan area will be a welcoming, safer and more lively urban street that puts people in the centre. The project volume is approximately SEK 300 million. The task of the project management agency is to undertake project and project design management. The task began in 2019 and is ongoing.",
 
@@ -203,19 +208,19 @@ class App extends Component {
         return true;
     }
     render() {
-        return (<div style={{height:"100vh", width:"100vw"}}>
+        return (<div style={{ height: "100vh", width: "100vw" }}>
             <Media queries={{
                 small: "(max-width: 1025px)",
                 medium: "(min-width: 1024px)"
             }}>
                 {matches => (
                     <Fragment>
-                        {matches.small && 
-                        <Fragment>
-                            {/* <MobileHeaderBar content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage}/> */}
-                            <MobileHeader content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage}/>
-                            <BrowserRouter>
-                        <Route exact path="/" render={(props)=> <Home fadeProperties={this.state.fadeProperties} fadeImages={this.state.mobileImages}/>}/>
+                        {matches.small &&
+                            <Fragment>
+                                {/* <MobileHeaderBar content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage}/> */}
+                                <MobileHeader content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage} />
+                                <BrowserRouter>
+                                    <Route exact path="/" render={(props) => <Home fadeProperties={this.state.fadeProperties} fadeImages={this.state.mobileImages} />} />
                                     <Route exact path="/about"
                                         render={(props) => <MobileAbout content={this.checkLanguage() ? this.state.swe.aboutText : this.state.eng.aboutText} sigil={this.checkLanguage() ? this.state.swe.sigil : this.state.eng.sigil} />}
                                     />
@@ -227,9 +232,9 @@ class App extends Component {
                                     />
                                 </BrowserRouter>
                                 <MobileFooter content={this.checkLanguage() ? this.state.swe.footer : this.state.eng.footer} />
-                        </Fragment>
+                            </Fragment>
                         }
-                        {matches.medium && 
+                        {matches.medium &&
                             <Fragment>
                                 <Header content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage} />
                                 <Slideshow fadeProperties={this.state.fadeProperties} fadeImages={this.state.images} />

@@ -8,7 +8,7 @@ class Footer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            companyInfo: "Projektledningsbyrån J.Hedenström AB \nOrg.nr: 556886-4622 \nLångholmsgatan 30 \n117 33 Stockholm"
+            // companyInfo: "Projektledningsbyrån AB \nOrg.nr: 556886-4622 \nLångholmsgatan 30 \n117 33 Stockholm"
         }
     }
     render() {
@@ -18,7 +18,7 @@ class Footer extends Component {
                 <Navbar.Brand className="brand" href="#home">Projektledningsbyrån</Navbar.Brand>
                 <Nav className="mr-auto navbar align-text">
                     <Navbar.Text className="footer align-text">
-                        <p className="p3">Projektledningsbyrån J.Hedenström AB</p>
+                        <p className="p3">Projektledningsbyrån AB</p>
                         <p className="p1">Org.nr: 556886-4622</p>
                         <p className="p1">Långholmsgatan 30</p>
                         <p className="p1">117 33 Stockholm</p>
