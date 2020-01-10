@@ -12,7 +12,7 @@ class Contact extends Component {
     }
     render() {
         return (<div>
-            <MobilePost image={[require("../../resources/img/contact/johan.jpg")]} state="image" alt="Johan Hedenström"/>/>
+            <MobilePost image={[require("../../resources/img/contact/johan.jpg")]} state="image" alt="Johan Hedenström"/>
             <MobilePost email="johan.hedenstrom@projektledningsbyran.se" phone="070-744 0850" title="Johan Hedenström" contact={true}/>
             <MobilePost image={[require("../../resources/img/contact/fredrik.jpg")]} state="image" alt="Fredrik Molin"/>
             <MobilePost email="fredrik.molin@projektledningsbyran.se" phone="073-432 5539" contact={true} title="Fredrik Molin" />
