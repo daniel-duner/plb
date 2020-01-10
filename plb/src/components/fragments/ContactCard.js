@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import ImageWebP from 'react-image-webp';
 
 import "../../resources/css/font.css";
 import "../../resources/css/contactCard.css";
@@ -17,9 +18,10 @@ class ContactCard extends Component {
       >
         <Row style={{height:"100%", padding:"50px 50px 50px 50px"}}>
           <Col md={6} style={{ height: "100%",textAlign:"right" }}>
-            <img
+            <ImageWebP
               style={{maxHeight:"100%"}}
-              src={this.props.image}
+              src={this.props.image.img}
+              webp={this.props.image.imgWebP}
               alt={this.props.title}
             />
           </Col>

@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
+import ImageWebP from 'react-image-webp';
 
 import "../../resources/css/post.css";
 import "../../resources/css/font.css";
@@ -14,10 +15,11 @@ class Post extends Component {
   }
   renderImageWithCaption = () => {
     return <Col className="align-center">
-      <img
+      <ImageWebP
         style={{ padding: "2vw 2vw 1vw 2vw" }}
         className="d-block w-100"
-        src={this.props.image}
+        src={this.props.image.img}
+        webp={this.props.image.imgWebP}
         alt={this.props.alt}
       />
       <p
@@ -29,10 +31,11 @@ class Post extends Component {
   }
   renderImage = () => {
     return <Col className="align-center">
-      <img
+      <ImageWebP
         style={{ padding: "2vw 2vw 2vw 2vw" }}
         className="d-block w-100"
         src={this.props.image}
+        webp={this.props.image.imgWebP}
         alt={this.props.alt}
       />
     </Col>

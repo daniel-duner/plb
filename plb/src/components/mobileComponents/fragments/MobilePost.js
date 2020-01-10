@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
+import ImageWebP from 'react-image-webp';
 
 import '../../../resources/css/mobilePost.css';
 import '../../../resources/css/font.css';
@@ -8,9 +9,10 @@ class MobilePosts extends React.Component {
     renderImage = () => {
         return (
             <div>
-                <img style={{ objectFit: "cover" }}
+                <ImageWebP style={{ objectFit: "cover" }}
                     className="d-block w-100"
-                    src={this.props.image}
+                    src={this.props.image.img}
+                    webp={this.props.image.imgWebP}
                     alt={this.props.alt}
                 />
                 <p class="post-mobile-text" style={{ padding: "2vw 2vw 0vw 2vw" }} >

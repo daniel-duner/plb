@@ -21,8 +21,20 @@ import MobileContact from './mobileComponents/MobileContact';
 
 
 class App extends Component {
+    canUseWebP() {
+        var elem = document.createElement('canvas');
+
+        if (!!(elem.getContext && elem.getContext('2d'))) {
+            // was able or not to get WebP representation
+            return true;
+        }
+
+        // very old browser like IE 8, canvas not supported
+        return false;
+    }
     constructor(props) {
         super(props);
+
         this.state = {
             language: props.cookie.get('language') || 'swe',
             fadeProperties: {
@@ -33,32 +45,38 @@ class App extends Component {
                 arrows: false
             },
             images: [
-                { 
-                    img: require("../resources/img/homePhotos/2.WebP"),
+                {
+                    imgWebP: require("../resources/img/homePhotos/2.WebP"),
+                    img: require("../resources/img/homePhotos/2.jpg"),
                     alt: "Stockholm night"
                 },
-                { 
-                    img: require("../resources/img/homePhotos/3.WebP"),
+                {
+                    imgWebP: require("../resources/img/homePhotos/3.WebP"),
+                    img: require("../resources/img/homePhotos/3.jpg"),
                     alt: "Stockholm sunset"
                 },
-                { 
-                    img: require("../resources/img/homePhotos/1.WebP"),
+                {
+                    imgWebP: require("../resources/img/homePhotos/1.WebP"),
+                    img: require("../resources/img/homePhotos/1.jpg"),
                     alt: "Cranes"
                 },
-                
+
 
             ],
             mobileImages: [
-                { 
-                    img: require("../resources/img/homePhotos/mobile2.WebP"),
+                {
+                    imgWebP: require("../resources/img/homePhotos/mobile2.WebP"),
+                    img: require("../resources/img/homePhotos/mobile2.jpg"),
                     alt: "Stockholm night"
                 },
-                { 
-                    img: require("../resources/img/homePhotos/mobile3.WebP"),
+                {
+                    imgWebP: require("../resources/img/homePhotos/mobile3.WebP"),
+                    img: require("../resources/img/homePhotos/mobile3.jpg"),
                     alt: "Stockholm sunset"
                 },
-                { 
-                    img: require("../resources/img/homePhotos/mobile1.WebP"),
+                {
+                    imgWebP: require("../resources/img/homePhotos/mobile1.WebP"),
+                    img: require("../resources/img/homePhotos/mobile1.jpg"),
                     alt: "Cranes"
                 },
 
@@ -239,7 +257,9 @@ class App extends Component {
                                 {/* <MobileHeaderBar content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage}/> */}
                                 <MobileHeader content={this.checkLanguage() ? this.state.swe.header : this.state.eng.header} setLanguage={this.setLanguage} />
                                 <BrowserRouter>
-                                    <Route exact path="/" render={(props) => <Home fadeProperties={this.state.fadeProperties} fadeImages={this.state.mobileImages} />} />
+                                    <Route exact path="/"
+                                        render={(props) => <Home fadeProperties={this.state.fadeProperties} fadeImages={this.state.mobileImages} />}
+                                    />
                                     <Route exact path="/about"
                                         render={(props) => <MobileAbout content={this.checkLanguage() ? this.state.swe.aboutText : this.state.eng.aboutText} sigil={this.checkLanguage() ? this.state.swe.sigil : this.state.eng.sigil} />}
                                     />
