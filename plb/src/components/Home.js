@@ -13,7 +13,7 @@ class Home extends Component{
     }
     render(){
         return(
-            <Slideshow fadeProperties={this.props.fadeProperties} fadeImages={this.props.fadeImages} />
+            <Slideshow fadeProperties={this.props.fadeProperties} fadeImages={this.props.fadeImages}/>
         );
     };
 }

@@ -18,6 +18,7 @@ class Post extends Component {
         style={{ padding: "2vw 2vw 1vw 2vw" }}
         className="d-block w-100"
         src={this.props.image}
+        alt={this.props.alt}
       />
       <p
         style={{ paddingLeft: "2vw", paddingBottom: "1vw" }}
@@ -32,6 +33,7 @@ class Post extends Component {
         style={{ padding: "2vw 2vw 2vw 2vw" }}
         className="d-block w-100"
         src={this.props.image}
+        alt={this.props.alt}
       />
     </Col>
   }
@@ -54,7 +56,8 @@ class Post extends Component {
       href={this.props.sigil.href}
       title={this.props.sigil.title}
       target=" _blank">
-      <img src={this.props.sigil.src} />
+      <img src={this.props.sigil.src} 
+      alt={this.props.altSigil}/>
     </a>
   }
   renderText = () => {
@@ -81,26 +84,3 @@ class Post extends Component {
 }
 
 export default Post;
-
-
-
-
-
-
-
-
-
-
-//Carousel element
-{/* <Carousel {...this.props.carouselSettings}> */ }
-{/* <Carousel indicators='false' controls='false'>
-                    {this.props.carouselImages.map((picture) =>
-                        <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={picture.toString()}
-                        />
-                        <p className="post-standard-text">{this.props.imgText}</p>
-                            </Carousel.Item>
-                        )}
-                    </Carousel> */}

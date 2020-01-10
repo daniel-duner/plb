@@ -33,15 +33,34 @@ class App extends Component {
                 arrows: false
             },
             images: [
-                require("../resources/img/homePhotos/2.jpg"),
-                require("../resources/img/homePhotos/3.jpg"),
-                require("../resources/img/homePhotos/1.jpg"),
+                { 
+                    img: require("../resources/img/homePhotos/2.jpg"),
+                    alt: "Stockholm night"
+                },
+                { 
+                    img: require("../resources/img/homePhotos/3.jpg"),
+                    alt: "Stockholm sunset"
+                },
+                { 
+                    img: require("../resources/img/homePhotos/1.jpg"),
+                    alt: "Cranes"
+                },
+                
 
             ],
             mobileImages: [
-                require("../resources/img/homePhotos/mobile2.jpg"),
-                require("../resources/img/homePhotos/mobile3.jpg"),
-                require("../resources/img/homePhotos/mobile1.jpg"),
+                { 
+                    img: require("../resources/img/homePhotos/mobile2.jpg"),
+                    alt: "Stockholm night"
+                },
+                { 
+                    img: require("../resources/img/homePhotos/mobile3.jpg"),
+                    alt: "Stockholm sunset"
+                },
+                { 
+                    img: require("../resources/img/homePhotos/mobile1.jpg"),
+                    alt: "Cranes"
+                },
 
             ],
             swe: {

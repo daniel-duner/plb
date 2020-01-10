@@ -20,6 +20,7 @@ class ContactCard extends Component {
             <img
               style={{maxHeight:"100%"}}
               src={this.props.image}
+              alt={this.props.title}
             />
           </Col>
           <Col md={6}>
