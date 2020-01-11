@@ -37,11 +37,11 @@ class Project extends Component {
         return (<div>
             <MobilePost image={this.state.images[0]} state="image" imgText={this.props.content.imgText[0]} alt={this.state.alt[0]} />
             <MobilePost title={this.props.content.vasagatanTitle} text={this.props.content.vasagatanText} state="text" />
-            <MobilePost image={this.state.images[1]} state="image" alt={this.state.alt[1]} />
+            <MobilePost image={this.state.images[3]} state="image" alt={this.state.alt[1]} />
             <MobilePost title={this.props.content.westBridgeTitle} text={this.props.content.westBridgeText} />
             <MobilePost image={this.state.images[2]} state="image" alt={this.state.alt[2]} />
             <MobilePost title={this.props.content.vasaBridgeTitle} text={this.props.content.vasaBridgeText} />
-            <MobilePost image={this.state.images[3]} state="image" imgText={this.props.content.imgText[1]} alt={this.state.alt[3]} />
+            <MobilePost image={this.state.images[1]} state="image" imgText={this.props.content.imgText[1]} alt={this.state.alt[3]} />
             <MobilePost title={this.props.content.slussenTitle} text={this.props.content.slussenText} />
         </div>);
     };
