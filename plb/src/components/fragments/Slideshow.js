@@ -19,12 +19,14 @@ class Slideshow extends Component {
         <Fade {...this.props.fadeProperties}>
           {this.props.fadeImages.map((picture) =>
             <div className="each-fade">
-              <div className="image-container" >
+              <div className="image-container" fluid>
+
                 <ImageWebP className="add-text"
                   responsive
                   src={picture.img}
                   webp={picture.imgWebP}
                   alt={picture.alt}
+                  className="d-block w-100"
                   fluid />
                 <div style={textStyle} >
                   <h1 className="text-image">{this.props.slideshowText}</h1>
