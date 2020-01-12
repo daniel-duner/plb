@@ -106,30 +106,30 @@ class App extends Component {
 
                     listFactsTitle: "Om oss",
                     listFacts: [
-                        "Projektledning, projekteringsledning och byggledning av mark- och infrastrukturprojekt",
-                        "Verksamhet sedan 2012",
-                        "Teoretisk och praktisk projektledningskompetens hos samtliga medarbetare",
+                        "Projektledning, projekteringsledning och byggledning av mark- och infrastrukturprojekt.",
+                        "Verksamhet sedan 2012.",
+                        "Teoretisk och praktisk projektledningskompetens hos samtliga medarbetare.",
                         "Företag med stark likviditet. Högsta kreditvärdighet enligt UC."
                     ],
 
                     listValuesTitle: "Värderingar",
-                    listValues: ["Lösningsinriktat, kundfokuserat och projektfokuserat tjänsteföretag",
-                        "Kunden och projektets mål värnas alltid",
-                        "Människorna i projekt är individer som skapar team.  Professionella, nyfikna och lärande",
-                        "Företag som alltid tar ansvar för utfört arbete"],
+                    listValues: ["Lösningsinriktat, kundfokuserat och projektfokuserat tjänsteföretag.",
+                        "Kunden och projektets mål värnas alltid.",
+                        "Människorna i projekt är individer som skapar team.  Professionella, nyfikna och lärande.",
+                        "Företag som alltid tar ansvar för utfört arbete."],
 
                     listIdeaTitle: "Affärsidé",
-                    listIdea: ["Starkt varumärke i branschen med kvalificerade resurser för ledning av mark- och infrastrukturprojekt",
-                        "Kundfokuserat tjänsteföretag som arbetar för långsiktiga affärsrelationer"],
+                    listIdea: ["Starkt varumärke i branschen med kvalificerade resurser för ledning av mark- och infrastrukturprojekt.",
+                        "Kundfokuserat tjänsteföretag som arbetar för långsiktiga affärsrelationer."],
 
-                    listSystemTitle: "Verksamhetsystem KMA",
+                    listSystemTitle: "Verksamhetssystem KMA",
                     listSystem: ["Långsiktiga affärsrelationer kräver kännedom och kunskap hur rätt kvalitet uppnås. Rätt kvalitet uppnås genom utförande av rätt arbetsuppgifter. Vårt verksamhetssystem hjälper oss i arbetet med att göra rätt arbetsuppgifter och att få långsiktiga affärsrelationer.",
                         "Vårt företagsinterna verksamhetssystem är uppbyggt för att uppfylla krav i SS-EN ISO 9001, 14001 samt 45001. I verksamhetssystemet ingår fungerande stödprocesser upprättade med stöd utifrån SS-ISO 21500 för uppdragsledning, projektledning, projekteringsledning och byggledning."],
                 },
                 projectText: {
                     imgText: [
-                        "Foto: Sweco/Stockholm stad",
-                        "Foto: Stockholm stad"
+                        "Foto: Sweco/Stockholms stad",
+                        "Foto: Stockholms stad"
                     ],
                     vasagatanTitle: "Projekt Vasagatan",
                     vasagatanText: "Vasagatan mellan Tegelbacken och Norra Bantorget byggs om för att möta dagens och framtidens behov. Nya Vasagatan blir en välkomnande,"
@@ -181,23 +181,23 @@ class App extends Component {
                 aboutText: {
                     listFactsTitle: "In brief",
                     listFacts: [
-                        "Project management, project design management and construction management for land and infrastructure projects",
-                        "Active since 2012",
+                        "Project management, project design management and construction management for land and infrastructure projects.",
+                        "Active since 2012.",
                         "Company with strong liquidity. Highest credit rating provided by UC.",
                     ],
 
                     listValuesTitle: "Values",
                     listValues: [
-                        "Solution-oriented, customer-focused and project-focused service company",
-                        "Customer and project goals always comes first",
-                        "Projects are driven by individuals who come together to form a team. Professional, curious and always learning",
-                        "Company that always take responsibility for the work we do"
+                        "Solution-oriented, customer-focused and project-focused service company.",
+                        "Customer and project goals always comes first.",
+                        "Projects are driven by individuals who come together to form a team. Professional, curious and always learning.",
+                        "Company that always take responsibility for the work we do."
                     ],
 
                     listIdeaTitle: "Business Concept",
                     listIdea: [
-                        "Strong brand in the industry with qualified resources for the management of land and infrastructure projects",
-                        "Customer-focused service company that works to build and nurture long-term business relationships"
+                        "Strong brand in the industry with qualified resources for the management of land and infrastructure projects.",
+                        "Customer-focused service company that works to build and nurture long-term business relationships."
                     ],
 
                     listSystemTitle: "Business system – KMA",
@@ -208,8 +208,8 @@ class App extends Component {
                 },
                 projectText: {
                     imgText: [
-                        "Photo: Sweco/Stockholm stad",
-                        "Photo: Stockholm stad",
+                        "Photo: Sweco/Stockholms stad",
+                        "Photo: Stockholms stad",
                     ],
                     vasagatanTitle: "Vasagatan Project",
                     vasagatanText: "The central Stockholm street of Vasagatan between Tegelbacken and Norra Bantorget is being rebuilt to meet the needs of today and the future. The new Vasagatan area will be a welcoming, safer and more lively urban street that puts people in the centre. The project volume is approximately SEK 300 million. The task of the project management agency is to undertake project and project design management. The task began in 2019 and is ongoing.",

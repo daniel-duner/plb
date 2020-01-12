@@ -39,9 +39,9 @@ class Project extends Component{
     render(){
         return(<div>
             <Post title={this.props.content.vasagatanTitle} image={this.state.images[0]} text={this.props.content.vasagatanText}  imagePosition="left" imgText={this.props.content.imgText[0]} alt={this.state.alt[0]}/>
-            <Post title={this.props.content.westBridgeTitle} image={this.state.images[1]} text={this.props.content.westBridgeText}  imagePosition="right" alt={this.state.alt[1]}/>
+            <Post title={this.props.content.westBridgeTitle} image={this.state.images[3]} text={this.props.content.westBridgeText}  imagePosition="right" alt={this.state.alt[1]}/>
             <Post title={this.props.content.vasaBridgeTitle} image={this.state.images[2]} text={this.props.content.vasaBridgeText}  imagePosition="left" alt={this.state.alt[2]}/>
-            <Post title={this.props.content.slussenTitle} image={this.state.images[3]} text={this.props.content.slussenText}  imagePosition="left" imgText={this.props.content.imgText[1]} alt={this.state.alt[3]}/>
+            <Post title={this.props.content.slussenTitle} image={this.state.images[1]} text={this.props.content.slussenText}  imagePosition="left" imgText={this.props.content.imgText[1]} alt={this.state.alt[3]}/>
         </div>);
     };
 }
