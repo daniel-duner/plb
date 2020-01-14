@@ -59,8 +59,10 @@ class Post extends Component {
       href={this.props.sigil.href}
       title={this.props.sigil.title}
       target=" _blank">
-      <img src={this.props.sigil.src} 
-      alt={this.props.altSigil}/>
+      <img
+        src={this.props.sigil.src}
+        alt={this.props.altSigil}
+      />
     </a>
   }
   renderText = () => {
