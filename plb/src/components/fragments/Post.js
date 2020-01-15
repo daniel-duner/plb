@@ -34,7 +34,7 @@ class Post extends Component {
       <ImageWebP
         style={{ padding: "2vw 2vw 2vw 2vw" }}
         className="d-block w-100"
-        src={this.props.image}
+        src={this.props.image.img}
         webp={this.props.image.imgWebP}
         alt={this.props.alt}
       />
